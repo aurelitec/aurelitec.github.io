@@ -1,0 +1,21 @@
+body {
+    font-family: 'Monda', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.jumbotron {
+    background: #1BADEA;
+    color: #fff;
+}
+
+.jumbotron-shot {
+    border: 4px solid #fff;
+}
+
+
+
+.btn-primary {
+    background: linear-gradient(to top, #757676 0%,#222222 0%,#4c4c4c 69%,#757676 98%) #494a4e;
+    border: 2px solid #fff;
+    font-size: 1.4rem;
+    padding: 0.25rem 1rem;
+}
