@@ -1,4 +1,5 @@
 body {
+    color: #373737;
     font-family: 'Monda', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -102,32 +103,63 @@ a:focus, a:hover {
 
 .quote-heading {
     font-size: 1.25rem;
-    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .feature-decoration {
-    background: #1badea url("../img/theme/tile.png") no-repeat center center;
+    background: #1badea;
     height: 100px;
     margin: 0 2rem 2rem 0;
     width: 100px;
 }
 
 
-.prefooter {
-    background: #f0f0f0;
-    padding: 2rem 0;
+
+.stripe {
+    padding: 3rem 0;
 }
 
+.stripe-featured-logos {
+    background: #1badea;
+    text-align: center;
+}
+
+.featured-logo {
+    margin: 0 2rem;
+}
+
+.stripe-quote {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../img/theme/backgrounds/white_carbon.png");
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.stripe-quote .blockquote {
+    border-left: none;
+    font-size: 1rem;
+    padding: 0 4rem;
+}
+
+
+
+.more {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+
 .site-footer {
-    background: #F5F5F5 url("/img/theme/backgrounds/gray-texture.png") repeat;
-    padding: 3rem 0;
+    background: #083346;
+    color: #fff;
+    padding: 4rem 0;
     text-align: center;
 }
 
 .site-footer .nav {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .site-footer .nav-link {
-    color: #000;
+    color: #fff;
 }
