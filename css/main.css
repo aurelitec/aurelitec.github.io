@@ -2,9 +2,72 @@ body {
     font-family: 'Monda', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.jumbotron {
-    background: #1BADEA;
+a {
+    color: #1badea;
+}
+
+a:focus, a:hover {
+    color: #1badea;
+    text-decoration: underline;
+}
+
+
+
+.navbar {
+    border-bottom: 2px solid #fff;
+    padding: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.header-logo {
+    max-height: 140px;
+}
+
+.navbar .nav {
+    float: right;
+}
+
+.navbar .nav-link {
+    color: #000;
+    display: table-cell;
+    font-size: 1.15rem;
+    font-weight: bold;
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    width: 120px;
+}
+
+.navbar .nav-link:focus, .navbar .nav-link:hover {
+    background: #1badea;
     color: #fff;
+}
+
+
+
+
+.jumbotron {
+    background: #1badea url("../img/theme/jumbotron-background.png") no-repeat top center;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
+.jumbotron-heading {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.jumbotron-quote {
+    margin-bottom: 2rem;
+}
+
+.appname {
+    font-family: 'Dosis', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 200;
 }
 
 .jumbotron-shot {
@@ -18,4 +81,53 @@ body {
     border: 2px solid #fff;
     font-size: 1.4rem;
     padding: 0.25rem 1rem;
+}
+
+
+
+
+.content-section {
+    margin-bottom: 3rem;
+}
+
+.section-heading {
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.item-heading {
+    margin-bottom: 1rem;
+}
+
+.quote-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.feature-decoration {
+    background: #1badea url("../img/theme/tile.png") no-repeat center center;
+    height: 100px;
+    margin: 0 2rem 2rem 0;
+    width: 100px;
+}
+
+
+.prefooter {
+    background: #f0f0f0;
+    padding: 2rem 0;
+}
+
+.site-footer {
+    background: #F5F5F5 url("/img/theme/backgrounds/gray-texture.png") repeat;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.site-footer .nav {
+    margin-bottom: 1rem;
+}
+
+.site-footer .nav-link {
+    color: #000;
 }
