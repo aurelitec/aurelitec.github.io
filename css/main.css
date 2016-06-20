@@ -51,7 +51,7 @@ a:focus, a:hover {
 
 
 .jumbotron {
-    background: #1badea url("../img/theme/jumbotron-background.png") no-repeat top center;
+    background: #1badea url("../img/theme/backgrounds/jumbotron-background.png") no-repeat top center;
     color: #fff;
     margin-bottom: 4rem;
 }
@@ -150,9 +150,9 @@ a:focus, a:hover {
 
 
 .site-footer {
-    background: #083346;
+    background: #000;
     color: #fff;
-    padding: 4rem 0;
+    padding: 4rem 0 3rem 0;
     text-align: center;
 }
 
@@ -162,4 +162,14 @@ a:focus, a:hover {
 
 .site-footer .nav-link {
     color: #fff;
+}
+
+.copyright {
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.social-icon {
+    height: 32px;
+    width: 32px;
 }
