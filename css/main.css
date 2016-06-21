@@ -1,4 +1,7 @@
 body {
+    background: url("../img/theme/backgrounds/body-texture.png") repeat #F5F5F5;
+    /*background: #f5f5f5;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../img/theme/backgrounds/white_carbon.png");*/
     color: #373737;
     font-family: 'Monda', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -15,6 +18,7 @@ a:focus, a:hover {
 
 
 .navbar {
+    background: #fff;
     border-bottom: 2px solid #fff;
     padding: 0;
 }
@@ -53,7 +57,7 @@ a:focus, a:hover {
 .jumbotron {
     background: #1badea url("../img/theme/backgrounds/jumbotron-background.png") no-repeat top center;
     color: #fff;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .jumbotron-heading {
@@ -76,12 +80,18 @@ a:focus, a:hover {
 }
 
 .jumbotron-extra {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../img/theme/backgrounds/white_carbon.png");
+    background: #f5f5f5;
     font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     padding: 1.5rem 0;
     text-align: center;
+}
+
+
+.main-content {
+    background: #fff;
+    padding: 3rem 2rem;
 }
 
 
@@ -93,13 +103,39 @@ a:focus, a:hover {
     padding: 0.25rem 1rem;
 }
 
-.btn-primary:hover {
+.btn-primary:focus, .btn-primary:hover {
     background: #494a4e;
     border-color: #fff;
 }
 
 
 
+.site-section-menu {
+    border-top: 2px solid #fff;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.site-section-menu .nav-link {
+    background: #1badea;
+    border-left: 2px solid #fff;
+    color: #fff;
+    display: table-cell;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.site-section-menu .nav-link:hover {
+    background: #34b6ec;
+}
+
+.site-section-menu .nav-link.active {
+    background: #fff;
+    color: #1badea;
+    font-weight: bold;
+}
 
 .content-section {
     margin-bottom: 3rem;
@@ -112,6 +148,7 @@ a:focus, a:hover {
 }
 
 .item-heading {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -147,7 +184,7 @@ a:focus, a:hover {
 }
 
 .stripe-quote {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../img/theme/backgrounds/white_carbon.png");
+    background: #f5f5f5;
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
@@ -166,20 +203,21 @@ a:focus, a:hover {
 }
 
 
+/*****************************
+ Site footer
+*****************************/
 
 .site-footer {
-    background: #000;
-    color: #fff;
-    padding: 4rem 0 3rem 0;
+    padding: 3rem 0;
     text-align: center;
 }
 
 .site-footer .nav {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .site-footer .nav-link {
-    color: #fff;
+    color: #373737;
 }
 
 .copyright {
