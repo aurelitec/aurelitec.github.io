@@ -1,9 +1,13 @@
 body {
-    background: url("../img/theme/backgrounds/body-texture.png") repeat #F5F5F5;
-    /*background: #f5f5f5;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../img/theme/backgrounds/white_carbon.png");*/
+    background: #fff;
     color: #373737;
     font-family: 'Monda', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 992px) {
+    body {
+        background: url("../img/theme/backgrounds/body-texture.png") repeat #F5F5F5;
+    }
 }
 
 a {
@@ -91,7 +95,7 @@ a:focus, a:hover {
 
 .main-content {
     background: #fff;
-    padding: 3rem 2rem;
+    padding: 3rem 0 3rem 0;
 }
 
 
@@ -137,7 +141,7 @@ a:focus, a:hover {
     font-weight: bold;
 }
 
-.content-section {
+.hcontent {
     margin-bottom: 3rem;
 }
 
@@ -147,22 +151,13 @@ a:focus, a:hover {
     text-align: center;
 }
 
-.item-heading {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+
+.page-heading {
+    margin-bottom: 2rem;
 }
 
-.quote-heading {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
 
-.feature-decoration {
-    background: #1badea;
-    height: 100px;
-    margin: 0 2rem 2rem 0;
-    width: 100px;
-}
+
 
 
 
@@ -189,9 +184,14 @@ a:focus, a:hover {
     text-align: center;
 }
 
-.stripe-quote .blockquote {
+.blockquote {
     border-left: none;
     font-size: 1rem;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.stripe-quote .blockquote {
     padding: 0 4rem;
 }
 
@@ -245,4 +245,50 @@ a:focus, a:hover {
 .social-icon {
     height: 24px;
     width: 24px;
+}
+
+
+
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0;
+}
+
+
+/*
+ * Heading styles.
+ */
+
+ .square-heading {
+     background: #1badea;
+     border-left: 2px solid #fff;
+     box-sizing: content-box;
+     color: #fff;
+     font-size: 1rem;
+     font-weight: bold;
+     height: 140px;
+     line-height: 140px;
+     margin: 0 0 3rem 0;
+     text-align: center;
+     width: 140px;
+ }
+
+ .item-heading {
+     font-size: 1.25rem;
+     margin-bottom: 1rem;
+ }
+
+ .quote-heading {
+     font-size: 1.25rem;
+     font-weight: bold;
+     margin-bottom: 1rem;
+ }
+
+
+/*
+ * Link styles.
+ */
+
+.heading-link:focus, .heading-link:hover {
+    color: #000;
+    text-decoration: none;
 }
