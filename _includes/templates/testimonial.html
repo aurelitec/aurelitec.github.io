@@ -1,4 +1,8 @@
 <blockquote class="blockquote hcontent">
-    <h3 class="quote-heading">{{ testimonial.by }}</h3>
+    <h3 class="quote-heading">
+        {% if testimonial.link %}<a class="heading-link" href="{{ testimonial.link }}" target="_blank">{% endif %}
+            {{ testimonial.by }}
+        {% if testimonial.link %}</a>{% endif %}
+    </h3>
     <p>{{ testimonial.content }}</p>
 </blockquote>

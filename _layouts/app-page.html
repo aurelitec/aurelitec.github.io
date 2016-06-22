@@ -1,0 +1,18 @@
+{% include common/header.html %}
+
+{% include jumbotrons/{{page.app}}.html %}
+
+{% include secondarymenus/{{page.app}}.html %}
+
+<!-- Main Content -->
+<div class="container main-content">
+    {{ content }}
+</div>
+
+{% if page.bottom_stripe %}
+    {% include {{page.bottom_stripe}} %}
+{% endif %}
+
+{% include stripes/logos/{{page.app}}.html %}
+
+{% include common/footer.html %}

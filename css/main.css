@@ -1,14 +1,16 @@
 body {
-    background: #fff;
+    background: url("../img/theme/backgrounds/body-texture.png") repeat #F5F5F5;
     color: #373737;
     font-family: 'Monda', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/*
 @media (min-width: 992px) {
     body {
         background: url("../img/theme/backgrounds/body-texture.png") repeat #F5F5F5;
     }
 }
+*/
 
 a {
     color: #1badea;
@@ -95,7 +97,8 @@ a:focus, a:hover {
 
 .main-content {
     background: #fff;
-    padding: 3rem 0 3rem 0;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
 }
 
 
@@ -114,14 +117,23 @@ a:focus, a:hover {
 
 
 
-.site-section-menu {
+/*
+ * Secondary menu.
+ */
+
+
+.stripe-secondary-menu {
+    background: #1badea;
     border-top: 2px solid #fff;
+}
+
+.secondary-menu {
     display: table;
     table-layout: fixed;
     width: 100%;
 }
 
-.site-section-menu .nav-link {
+.secondary-menu .nav-link {
     background: #1badea;
     border-left: 2px solid #fff;
     color: #fff;
@@ -131,15 +143,22 @@ a:focus, a:hover {
     text-align: center;
 }
 
-.site-section-menu .nav-link:hover {
+.secondary-menu .nav-link:first-child {
+    border-left: none;
+}
+
+.secondary-menu .nav-link:hover {
     background: #34b6ec;
 }
 
-.site-section-menu .nav-link.active {
+.secondary-menu .nav-link.active {
     background: #fff;
     color: #1badea;
     font-weight: bold;
 }
+
+
+
 
 .hcontent {
     margin-bottom: 3rem;
@@ -174,9 +193,14 @@ a:focus, a:hover {
     text-align: center;
 }
 
+
 .featured-logo {
     margin: 0 2rem;
 }
+
+/*
+ * Quote stripe.
+ */
 
 .stripe-quote {
     background: #f5f5f5;

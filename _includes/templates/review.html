@@ -1,4 +1,8 @@
 <blockquote class="blockquote">
-    <h3 class="quote-heading"><a class="heading-link" href="{{ review.link }}" target="_blank">{{ review.by }}</a></h3>
+    <h3 class="quote-heading">
+        {% if review.link %}<a class="heading-link" href="{{ review.link }}" target="_blank">{% endif %}
+            {{ review.by }}
+        {% if review.link %}</a>{% endif %}
+    </h3>
     <p>{{ review.content }}</p>
 </blockquote>

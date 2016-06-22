@@ -1,65 +1,36 @@
 ---
-active: history
+app    : colorveil
+layout : app-page
+active : history
 ---
 
-    {% include jumbotrons/colorveil.html %}
+{% capture thecontent %}
+<ul class="list-group">
+    <li class="list-group-item">Added a customizable keyword shortcut to turn the color veil on and off</li>
+    <li class="list-group-item">Added an option to automatically start ColorVeil on system startup</li>
+    <li class="list-group-item">Added the ability to select the veil color by entering a HTML color code or name</li>
+    <li class="list-group-item">Improved and simplified Settings window, with pagination</li>
+    <li class="list-group-item">Added a basic Check for Updates feature</li>
+    <li class="list-group-item">Added 32-bit and 64-bit MSI (Windows Installer) installation packages</li>
+    <li class="list-group-item"><time class="text-muted"><small>June 21, 2016</small></time></li>
+</ul>
+{% endcapture %}
+{% include templates/contentsection.html heading="Version 3.0" %}
 
-    <div class="container">
-        {% include sectionmenus/colorveil.html %}
+{% capture thecontent %}
+<ul class="list-group">
+    <li class="list-group-item">Simplified veil control interface</li>
+    <li class="list-group-item">Added portable and installer editions</li>
+    <li class="list-group-item">Improved native support for Windows 10/8.1/8</li>
+    <li class="list-group-item"><time class="text-muted"><small>August 5, 2015</small></time></li>
+</ul>
+{% endcapture %}
+{% include templates/contentsection.html heading="Version 2.0" %}
 
-        <!-- Main Content -->
-        <div class="main-content">
-
-            <div class="row hcontent">
-                <div class="col-lg-2">
-                    <h2 class="square-heading">Version 3.0</h2>
-                </div>
-                <div class="col-lg-8">
-                    <ul class="list-group">
-                        <li class="list-group-item">Added a customizable keyword shortcut to turn the color veil on and off</li>
-                        <li class="list-group-item">Added an option to automatically start ColorVeil on system startup</li>
-                        <li class="list-group-item">Added the ability to select the veil color by entering a HTML color code or name</li>
-                        <li class="list-group-item">Improved and simplified Settings window, with pagination</li>
-                        <li class="list-group-item">Added a basic Check for Updates feature</li>
-                        <li class="list-group-item">Added 32-bit and 64-bit MSI (Windows Installer) installation packages</li>
-                        <li class="list-group-item"><time class="text-muted"><small>June 21, 2016</small></time></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2">
-                </div>
-            </div>
-
-            <div class="row hcontent">
-                <div class="col-lg-2">
-                    <h2 class="square-heading">Version 2.0</h2>
-                </div>
-                <div class="col-lg-8">
-                    <ul class="list-group">
-                        <li class="list-group-item">Simplified veil control interface</li>
-                        <li class="list-group-item">Added portable and installer editions</li>
-                        <li class="list-group-item">Improved native support for Windows 10/8.1/8</li>
-                        <li class="list-group-item"><time class="text-muted"><small>August 5, 2015</small></time></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2">
-                </div>
-            </div>
-
-            <div class="row hcontent">
-                <div class="col-lg-2">
-                    <h2 class="square-heading">Version 1.0</h2>
-                </div>
-                <div class="col-lg-8">
-                    <ul class="list-group">
-                        <li class="list-group-item">First public release.</li>
-                        <li class="list-group-item"><time class="text-muted"><small>February 18, 2013</small></time></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2">
-                </div>
-            </div>
-
-        </div>
-
-        {% include stripes/logos/colorveil.html %}
-    </div>
+{% capture thecontent %}
+<ul class="list-group">
+    <li class="list-group-item">First public release.</li>
+    <li class="list-group-item"><time class="text-muted"><small>February 18, 2013</small></time></li>
+</ul>
+{% endcapture %}
+{% include templates/contentsection.html heading="Version 1.0" %}
