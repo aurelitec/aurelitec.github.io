@@ -22,7 +22,6 @@ a:focus, a:hover {
 }
 
 
-
 .navbar {
     background: #fff;
     border-bottom: 2px solid #fff;
@@ -160,9 +159,6 @@ a:focus, a:hover {
 
 
 
-.hcontent {
-    margin-bottom: 3rem;
-}
 
 .section-heading {
     font-weight: bold;
@@ -220,7 +216,6 @@ a:focus, a:hover {
     border-left: none;
     font-size: 1rem;
     padding: 0;
-    margin-bottom: 2rem;
 }
 
 .stripe-quote .blockquote {
@@ -346,4 +341,10 @@ a:focus, a:hover {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
+}
+
+
+
+.content-item {
+    margin-bottom: 2rem;
 }

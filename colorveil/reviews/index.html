@@ -4,18 +4,23 @@ layout : app-page
 active : reviews
 ---
 
-{% capture thecontent %}
-{% assign reviews = site.reviews | sort: 'by', 'last' %}
-{% for review in reviews %}
-    {% include templates/review.html %}
-{% endfor %}
-{% endcapture %}
-{% include templates/contentsection.html heading="Reviews" %}
+    <!-- Main Content -->
+    <div class="container main-content">
 
-{% capture thecontent %}
-{% assign testimonials = site.testimonials | sort: 'by', 'last' %}
-{% for testimonial in testimonials %}
-    {% include templates/testimonial.html %}
-{% endfor %}
-{% endcapture %}
-{% include templates/contentsection.html heading="Testimonials" %}
+        {% capture thecontent %}
+        {% assign reviews = site.reviews | sort: 'by', 'last' %}
+        {% for review in reviews %}
+            {% include templates/review.html %}
+        {% endfor %}
+        {% endcapture %}
+        {% include templates/contentsection.html heading="Reviews" %}
+
+        {% capture thecontent %}
+        {% assign testimonials = site.testimonials | sort: 'by', 'last' %}
+        {% for testimonial in testimonials %}
+            {% include templates/testimonial.html %}
+        {% endfor %}
+        {% endcapture %}
+        {% include templates/contentsection.html heading="Testimonials" %}
+
+    </div>

@@ -4,14 +4,7 @@
 
 {% include secondarymenus/{{page.app}}.html %}
 
-    <!-- Main Content -->
-    <div class="container main-content">
-        {{ content }}
-    </div>
-
-{% if page.bottom_stripe %}
-    {% include {{page.bottom_stripe}} %}
-{% endif %}
+{{ content }}
 
 {% include stripes/logos/{{page.app}}.html %}
 
