@@ -286,6 +286,10 @@ a:focus, a:hover {
 }
 
 
+.list-group {
+    margin-bottom: 1rem;
+}
+
 .list-group-item {
     border: none;
     border-top: 1px solid #eee;
