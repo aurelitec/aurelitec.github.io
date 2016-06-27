@@ -184,14 +184,25 @@ a:focus, a:hover {
     padding: 3rem 0;
 }
 
-.stripe-featured-logos {
-    background: #1badea;
+/*
+ * Featured logos.
+ */
+
+.featured-logos {
     text-align: center;
 }
 
+.featured-logos a:focus, .featured-logos a:hover {
+    text-decoration: none;
+}
 
 .featured-logo {
-    margin: 0 2rem;
+    margin: 0 2rem 1rem 2rem;
+}
+
+.stripe-featured-logos {
+    background: #1badea;
+    padding: 3rem 0 2rem 0;
 }
 
 /*
@@ -275,6 +286,10 @@ a:focus, a:hover {
 }
 
 
+.list-group-item {
+    border: none;
+    border-top: 1px solid #eee;
+}
 
 .list-group-item:first-child, .list-group-item:last-child {
     border-radius: 0;
@@ -347,4 +362,12 @@ a:focus, a:hover {
 
 .content-item {
     margin-bottom: 2rem;
+}
+
+.image-list {
+    text-align: center;
+}
+
+.image-list-item {
+    margin: 0 2rem 1rem 2rem;
 }
