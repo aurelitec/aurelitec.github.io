@@ -1,7 +1,7 @@
 <blockquote class="blockquote content-item">
     <h3 class="quote-heading">
         {% if testimonial.link %}<a class="heading-link" href="{{ testimonial.link }}" target="_blank">{% endif %}
-            {{ testimonial.by }}
+            {{ testimonial.by }} {% if include.showappname %} about {{ testimonial.app }}{% endif %}
         {% if testimonial.link %}</a>{% endif %}
     </h3>
     <p>{{ testimonial.content }}</p>

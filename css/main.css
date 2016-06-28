@@ -82,6 +82,7 @@ a:focus, a:hover {
 
 .jumbotron-shot {
     border: 4px solid #fff;
+    margin-left: 1rem;
 }
 
 .jumbotron-extra {
@@ -334,6 +335,13 @@ a:focus, a:hover {
      margin-bottom: 1rem;
  }
 
+ .featured-heading {
+     color: #fff;
+     font-size: 1.25rem;
+     font-weight: bold;
+     margin-bottom: 1.25rem;
+ }
+
 
 
 /*
@@ -360,6 +368,12 @@ a:focus, a:hover {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
+}
+
+.help-subsection-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 

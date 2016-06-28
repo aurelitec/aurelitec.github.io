@@ -1,24 +1,23 @@
 ---
-app    : colorveil
-layout : app-page
-active : reviews
+layout : simple-page
+title  : Reviews
 ---
 
     <!-- Main Content -->
     <div class="container main-content">
 
         {% capture thecontent %}
-        {% assign reviews = site.reviews | where: 'app', 'ColorVeil' | sort: 'by', 'last' %}
+        {% assign reviews = site.reviews | sort: 'by', 'last' %}
         {% for review in reviews %}
-            {% include templates/review.html %}
+            {% include templates/review.html showappname="true" %}
         {% endfor %}
         {% endcapture %}
         {% include templates/contentsection.html heading="Reviews" %}
 
         {% capture thecontent %}
-        {% assign testimonials = site.testimonials | where: 'app', 'ColorVeil' | sort: 'by', 'last' %}
+        {% assign testimonials = site.testimonials | sort: 'by', 'last' %}
         {% for testimonial in testimonials %}
-            {% include templates/testimonial.html %}
+            {% include templates/testimonial.html showappname="true" %}
         {% endfor %}
         {% endcapture %}
         {% include templates/contentsection.html heading="Testimonials" %}

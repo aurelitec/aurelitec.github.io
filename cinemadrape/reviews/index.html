@@ -1,5 +1,5 @@
 ---
-app    : colorveil
+app    : cinemadrape
 layout : app-page
 active : reviews
 ---
@@ -8,7 +8,7 @@ active : reviews
     <div class="container main-content">
 
         {% capture thecontent %}
-        {% assign reviews = site.reviews | where: 'app', 'ColorVeil' | sort: 'by', 'last' %}
+        {% assign reviews = site.reviews | where: 'app', 'CinemaDrape' | sort: 'by', 'last' %}
         {% for review in reviews %}
             {% include templates/review.html %}
         {% endfor %}
@@ -16,7 +16,7 @@ active : reviews
         {% include templates/contentsection.html heading="Reviews" %}
 
         {% capture thecontent %}
-        {% assign testimonials = site.testimonials | where: 'app', 'ColorVeil' | sort: 'by', 'last' %}
+        {% assign testimonials = site.testimonials | where: 'app', 'CinemaDrape' | sort: 'by', 'last' %}
         {% for testimonial in testimonials %}
             {% include templates/testimonial.html %}
         {% endfor %}
