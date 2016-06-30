@@ -1,0 +1,96 @@
+---
+active : help
+app    : pixelhealer
+layout : app-page
+---
+
+<!-- Main Content -->
+<div class="container main-content">
+
+    {% capture thecontent %}
+        <div class="help-section">
+            <p>
+                PixelHealer can help you try to fix dead pixels by yourself, before running back to the store! You can
+                use it to fix dead, stuck or hot pixels on LCD or TFT screens, on desktop monitors, laptops or tablets.
+            </p>
+            <p>
+                First of all, use our own free <a href="/injuredpixels/" target="_blank">InjuredPixels</a> portable app
+                to check your screen or tablet for dead, stuck or hot pixels. Then, download and run PixelHealer without
+                installation, cover the dead pixel with the colored repair window, and click Start Flashing. PixelHealer
+                uses the already tested concept that flashing RGB colors over a dead or stuck pixel will revive it. So
+                let the repair window run for a while, then check to see if the dead pixel has been fixed or revived.
+                And repeat the process if necessary.
+            </p>
+            <p>
+                PixelHealer has an intuitive interface and it is very easy to use. Use the mouse or your finger to move
+                or resize the repair window. Open the intuitive Settings window to change the flashing colors, the
+                flashing interval, or to automatically close the app after a certain period of time.
+            </p>
+        </div>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Introduction" %}
+
+    {% capture thecontent %}
+        <div class="help-section">
+            <p>
+                To start and use PixelHealer, no installation is required: simply click the "Download And Run" button
+                from the <a href="/pixelhealer/windows/download/">PixelHealer download page</a>, save the Windows
+                executable program file to a location on your computer and then open or run the file.
+            </p>
+            <p>
+                PixelHealer will open two windows: the repair window (a small red window), and a larger Settings window,
+                with various settings and information. Use the mouse or your finger to move the red window over the dead
+                pixel, and click the Start Flashing button from the Settings window. PixelHealer uses the already tested
+                concept that flashing RGB colors over a dead or stuck pixel will revive it. So let the repair window run
+                for a while, then check to see if the dead pixel has been fixed or revived. Repeat the process if necessary.
+            </p>
+        </div>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Quick Start" %}
+
+    {% capture thecontent %}
+        <div class="help-section">
+            <p>The intuitive PixelHealer Settings window allows you to control the dead pixel repair process.</p>
+            <p>
+              The Settings window is automatically opened when the program starts. To close it, click the <i>Close Settings</i> button. To reopen it, right-click the
+              flashing repair window, press <i>Escape</i> while the repair window is focused, or click the PixelHealer icon from the Windows taskbar notification area.
+            </p>
+            <h4 class="help-subsection-heading">Start Flashing/Stop Flashing</h4>
+            <p>
+              Click the <i>Start Flashing</i> button to start the dead pixel repair process. The button's text will change to <i>Stop Flashing</i>, and you can use it
+              to stop (pause) flashing at any time.
+            </p>
+            <h4 class="help-subsection-heading">Flashing Interval</h4>
+            <p>
+              Use the <i>Flashing Interval</i> track bar to change the flashing speed. A 10 millisecond interval between color changes is the default setting. Feel free to
+              experiment with various speeds and see which one brings you the best results.
+            </p>
+            <h4 class="help-subsection-heading">Flashing Window Position and Size</h4>
+            <p>
+              Enter any pixel values in the two fields to change the position and size of the flashing repair window. You can also select the size from a list of common sizes, such
+              as 1x1, 5x5, 10x10, and up to 500x500.
+            </p>
+            <h4 class="help-subsection-heading">Always On Top</h4>
+            <p>Check this option to ensure that the PixelHealer repair window remains on top of all other windows. This is required for the repair process to take place.</p>
+            <h4 class="help-subsection-heading">Automaticall Close After</h4>
+            <p>
+              Use this option to automatically close PixelHealer after a certain period of time.
+            </p>
+            <h4 class="help-subsection-heading">Flashing Colors</h4>
+            <p>
+              Use these options to select which colors are used during flashing. You can select between the standard RGB colors: Black, White, Red, Green, Blue. You can also add
+              a custom color, and change its value by right-clicking on the <i>Custom</i> check box. By default, all the standard RGB colors are selected.
+            </p>
+            <h4 class="help-subsection-heading">Close Settings</h4>
+            <p>
+              Click this button to close the Settings window, but leave the flashing repair window working.
+            </p>
+            <h4 class="help-subsection-heading">Close PixelHealer</h4>
+            <p>
+              Click this button to close the entire PixelHealer app, including the Settings window and the flashing repair window.
+            </p>
+        </div>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="The Menu" %}
+
+</div>

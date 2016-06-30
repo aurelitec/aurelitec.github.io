@@ -1,0 +1,63 @@
+---
+active : overview
+app    : pixelhealer
+layout : app-page
+---
+
+<!-- Main Content -->
+<div class="container main-content">
+
+    {% capture thecontent %}
+        <div class="row">
+            <div class="col-lg-4 content-item">
+                <h3 class="item-heading">Step 1: Detect</h3>
+                <p>Use our own free <a href="/injuredpixels/">InjuredPixels</a> portable app to check your screen or tablet for dead, stuck or hot pixels.</p>
+            </div>
+            <div class="col-lg-4 content-item">
+                <h3 class="item-heading">Step 2: Start Fixing</h3>
+                <p>Download and run PixelHealer without installation, cover the dead pixel with the color window &amp; click Start Flashing.</p>
+            </div>
+            <div class="col-lg-4 content-item">
+                <h3 class="item-heading">Step 3: Wait &amp; Check</h3>
+                <p>Let the flashing window run for a while, than check to see if the dead pixel has been fixed or revived. Repeat if necessary.</p>
+            </div>
+            <div class="col-lg-4 content-item">
+                <h4 class="item-heading">Experiment Based</h4>
+                <p>PixelHealer uses the already tested concept that flashing RGB colors over a dead or stuck pixel will revive it.</p>
+            </div>
+            <div class="col-lg-4 content-item">
+                <h4 class="item-heading">Easy To Use</h4>
+                <p>Use the mouse to move or resize the flashing window, or the intuitive settings to change the flashing colors or interval.</p>
+            </div>
+            <div class="col-lg-4 content-item">
+                <h4 class="item-heading">Epilepsy Warning</h4>
+                <p>Flashing colors can trigger epilepsy attacks. Make sure you don't stare at the PixelHealer flashing window!</p>
+            </div>
+        </div>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Features" %}
+
+    {% capture thecontent %}
+        <div class="row">
+            <div class="col-lg-4 content-item">
+                <h3 class="quote-heading">
+                    <a class="heading-link" href="http://www.ghacks.net/2016/01/24/pixelhealer/" target="_blank">Ghacks</a>
+                </h3>
+                <p><q>It may be worth a shot, as the only other options you have are to return the screen/buy a new one or to live with it.</q></p>
+            </div>
+            <div class="col-lg-4 content-item">
+                <h3 class="quote-heading">
+                    <a class="heading-link" href="http://www.ilovefreesoftware.com/15/windows/system-utils/pixel-repair-software-identify-repair-dead-pixels-desktop.html" target="_blank">I Love Free Software</a>
+                </h3>
+                <p><q>Very straightforward: most of the task is done automatically and users just have to place the color window, start and stop it.</q></p>
+            </div>
+            <div class="col-lg-4 content-item">
+                <h3 class="quote-heading">
+                    <a class="heading-link" href="http://www.chip.de/downloads/PixelHealer-Portable_88736206.html" target="_blank">CHIP</a>
+                </h3>
+                <p><q>No prior knowledge is required, PixelHealer performs its duty even without installation.</q> (CHIP Verdict: Gut)</p>
+            </div>
+        </div>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Reviews" %}
+</div>
