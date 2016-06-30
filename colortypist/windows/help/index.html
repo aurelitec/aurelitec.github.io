@@ -1,0 +1,100 @@
+---
+active : help
+app    : colortypist
+layout : app-page
+---
+
+<!-- Main Content -->
+<div class="container main-content">
+
+    {% capture thecontent %}
+        <div class="help-section">
+            <p>
+                With Colortypist you can type in a color by its name or code, and see it fill your entire screen,
+                in real-time, while you type. You can easily set any color you like as your Desktop Wallpaper, and
+                get a more modern looking Desktop and a faster PC. You can also save any color to a tiny and fully
+                portable HTML file, that can be opened by any browser, PC, tablet or smartphone.
+            </p>
+            <p>
+                Colortypist can also copy colors for reuse in other applications, and generate sample images of any
+                size filled with the color of your choice. The Random menu lets you easily create beautiful and rare
+                random colors, and the View menu helps you easily convert between HTML color codes, RGB triplets, or
+                color names.
+            </p>
+            <p>Colortypist has a clean and easy to use interface, and requires no installation: simply download and run.</p>
+
+            <p>
+                Last but not least, Colortypist may help you have fun playing with colors, discovering and naming new
+                colors, and even checking the color of your birthday (#800522 for May 22, 1980).
+            </p>
+        </div>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Introduction" %}
+
+    {% capture thecontent %}
+        <div class="help-section">
+            <h3 class="help-section-heading">Color Menu</h3>
+            <h4 class="help-subsection-heading">Set As Desktop Wallpaper</h4>
+            <p>
+              Use this menu item to set the current color as a solid color Desktop Wallpaper. Colortypist will first display a confirmation dialog box, asking you to confirm
+              this action.
+            </p>
+            <h4 class="help-subsection-heading">Save Color As Html...</h4>
+            <p>
+              Use this menu item to save the current color to a tiny, fully portable HTML file. You can open and view the saved color in any browser, on various operating systems
+              and platforms, on PCs, notebooks, tablets, or smartphones.
+            </p>
+            <h4 class="help-subsection-heading">Copy Color Code</h4>
+            <p>
+              Use this menu item to copy the current color code or name, from the color typing text box to the Windows Clipboard.
+            </p>
+            <h4 class="help-subsection-heading">Copy Color Sample</h4>
+            <p>
+              Use this menu item to copy a sample image filled with the current color to the Windows Clipboard. The size of the image can be changed by using the <i>Color
+              Sample Size</i> menu item.
+            </p>
+            <h4 class="help-subsection-heading">Save Color Sample...</h4>
+            <p>
+              Use this menu item to save a sample image filled with the current color. The size of the image can be changed by using the <i>Color Sample Size</i> menu item.
+            </p>
+            <h4 class="help-subsection-heading">Color Sample Size</h4>
+            <p>
+              Use this menu item to change the size of the sample images that are copied or saved. Simply enter a new width and height in the menu text box, and press Enter.
+              Colortypist can generate sample images of any size, including small 100x100 iconic images, or Full HD, 1920x1080, wallpaper size images.
+            </p>
+        </div>
+
+        <div class="help-section">
+            <h3 class="help-section-heading">View Menu</h3>
+            <h4 class="help-subsection-heading">As HTML Hex</h4>
+            <p>
+              Use this menu item to covert the current color code to a HTML hexadecimal color code (e.g. <i>#E303A3</i>).
+            </p>
+            <h4 class="help-subsection-heading">As RGB</h4>
+            <p>
+              Use this menu item to covert the current color code to a RGB triplet color code (e.g. <i>227,3,163</i>).
+            </p>
+            <h4 class="help-subsection-heading">As Integer</h4>
+            <p>
+              Use this menu item to covert the current color code to an integer (numeric) color code (e.g. <i>-1899613</i>).
+            </p>
+            <h4 class="help-subsection-heading">As Name</h4>
+            <p>Use this menu item to covert the current color code to a color name (e.g. <i>Pink</i>). This option is not available for colors that do not have a standard name.</p>
+            <h4 class="help-subsection-heading">On COLOURlovers</h4>
+            <p>Use this menu item to open the current color on the <a href="http://www.colourlovers.com/" target="_blank">COLOURlovers</a> site. COLOURlovers is a creative community where people from around the world create and share colors, palettes and patterns.</p>
+        </div>
+
+        <div class="help-section">
+            <h3 class="help-section-heading">Help Menu</h3>
+            <p>Use the Help menu items to open the Colortypist home page, Online Help page (this page), and Share page, and get information about the version number of the app.</p>
+        </div>
+
+        <div class="help-section">
+            <h3 class="help-section-heading">Random Menu Item</h3>
+            <p>Use this menu item to generate and fill your screen with a random color.</p>
+        </div>
+
+    {% endcapture %}
+    {% include templates/contentsection.html heading="The Menu" %}
+
+</div>
