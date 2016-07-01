@@ -1,0 +1,26 @@
+---
+app    : htmtied
+layout : app-page
+active : reviews
+---
+
+<!-- Main Content -->
+<div class="container main-content">
+
+    {% capture thecontent %}
+    {% assign reviews = site.reviews | where: 'app', 'HTMtied' | sort: 'by', 'last' %}
+    {% for review in reviews %}
+        {% include templates/review.html %}
+    {% endfor %}
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Reviews" %}
+
+    {% capture thecontent %}
+    {% assign testimonials = site.testimonials | where: 'app', 'HTMtied' | sort: 'by', 'last' %}
+    {% for testimonial in testimonials %}
+        {% include templates/testimonial.html %}
+    {% endfor %}
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Testimonials" %}
+
+</div>

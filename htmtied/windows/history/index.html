@@ -1,0 +1,48 @@
+---
+app    : htmtied
+layout : app-page
+active : history
+---
+
+<!-- Main Content -->
+<div class="container main-content">
+
+    {% capture thecontent %}
+    <ul class="list-group">
+        <li class="list-group-item">Improved native support for Windows 8.1/8</li>
+        <li class="list-group-item">
+            <span class="label label-default label-pill pull-xs-right">New</span>
+            New and improved icon
+        </li>
+        <li class="list-group-item"><time class="text-muted"><small>May 29, 2013</small></time></li>
+    </ul>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Version 2.1" %}
+
+    {% capture thecontent %}
+    <ul class="list-group">
+        <li class="list-group-item">
+            <span class="label label-default label-pill pull-xs-right">New</span>
+            Added the ability to convert links en masse through Clipboard or by drag and drop
+        </li>
+        <li class="list-group-item">
+            <span class="label label-default label-pill pull-xs-right">New</span>
+            Added a Direct Mode that automatically saves the link files to a directory of your choosing
+        </li>
+        <li class="list-group-item"><time class="text-muted"><small>August 26, 2010</small></time></li>
+    </ul>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Version 2.0" %}
+
+    {% capture thecontent %}
+    <ul class="list-group">
+        <li class="list-group-item">
+            <span class="label label-default label-pill pull-xs-right">New</span>
+            First public release
+        </li>
+        <li class="list-group-item"><time class="text-muted"><small>August 10, 2010</small></time></li>
+    </ul>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Version 1.0" %}
+
+</div>
