@@ -1,0 +1,24 @@
+---
+active : help
+app    : whatsmyco-web
+layout : app-page
+---
+
+<!-- Main Content -->
+<div class="container main-content">
+
+    {% capture thecontent %}
+        <div class="help-section">
+            <p>
+                Type your name and get your matching color! Works for any name, title, quote, sentence, or even files.
+                A fun and personal way to discover and share beautiful colors, or inspiration for any task that requires
+                color. And a creative way to breath new life into your Internet persona and online presence. Turn words
+                you love into colors you love, copy and reuse their code, or save color swatches that can be used as profile
+                photos, or as beautiful modern wallpapers. WhatsMyCo works in any modern browser, and on any device: PCs,
+                notebooks, tablets, or smartphones. No install and no plugins required.
+            </p>
+        </div>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Introduction" %}
+
+</div>

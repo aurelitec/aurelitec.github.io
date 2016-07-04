@@ -1,0 +1,18 @@
+---
+app    : whatsmyco-web
+layout : app-page
+active : reviews
+---
+
+<!-- Main Content -->
+<div class="container main-content">
+
+    {% capture thecontent %}
+    {% assign reviews = site.reviews | where: 'app', 'WhatsMyCo' | sort: 'by', 'last' %}
+    {% for review in reviews %}
+        {% include templates/review.html %}
+    {% endfor %}
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Reviews" %}
+
+</div>
