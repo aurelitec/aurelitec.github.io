@@ -1,0 +1,30 @@
+---
+app    : injuredpixels-android
+layout : app-page
+active : install
+---
+
+<!-- Main Content -->
+<div class="container main-content">
+
+    {% capture thecontent %}
+    <h3 class="item-heading">Install InjuredPixels 1.0</h3>
+    <p>
+        InjuredPixels runs on all Android versions starting with version 4.4. It requires no Internet and no extra
+        permissions whatsoever. <span class="label label-default">Only 37KB</span>
+    </p>
+    <p>
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.aurelitec.injuredpixels" role="button" target="_blank">Get it on Google Play</a>
+    </p>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Install" %}
+
+</div>
+
+<div class="container stripe stripe-bottom">
+    <p>
+        InjuredPixels is free for use in any environment, including but not necessarily limited to: personal, academic,
+        commercial, government, business, non-profit, and for-profit. Before using InjuredPixels, you must accept its
+        <a href="/injuredpixels/android/license/">License Agreement</a>.
+    </p>
+</div>

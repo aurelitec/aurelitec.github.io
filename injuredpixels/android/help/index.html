@@ -1,0 +1,37 @@
+---
+active : help
+app    : injuredpixels-android
+layout : app-page
+---
+
+<!-- Main Content -->
+<div class="container main-content">
+
+    {% capture thecontent %}
+        <div class="help-section">
+            <p>
+                Use InjuredPixels to screen test a smartphone or tablet in the store, before buying, or during the warranty
+                period, as you may get a replacement according to the manufacturer's dead pixel policy. InjuredPixels fills
+                the entire screen with a primary or custom color, helping you to easily spot pixels that do not match the
+                selected color.
+            </p>
+            <p>The app is very easy to use:</p>
+            <ul>
+                <li>tap the color buttons or use the volume keys to cycle through colors</li>
+                <li>double tap anywhere to hide the buttons and check every inch for defects</li>
+                <li>double tap again to show the buttons</li>
+                <li>swipe down from the top of the screen and tap Back or Home to exit the app</li>
+            </ul>
+            <p>
+                Note: When going full (empty) screen, touching, tapping or swiping does nothing, giving you the freedom to
+                clean or gently rub any area while testing.
+            </p>
+            <p>
+                InjuredPixels is completely free, doesn't show ads, and requires no Internet and no extra permissions
+                whatsoever.
+            </p>
+        </div>
+    {% endcapture %}
+    {% include templates/contentsection.html heading="Introduction" %}
+
+</div>

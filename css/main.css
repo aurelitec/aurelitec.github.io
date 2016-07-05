@@ -65,6 +65,16 @@ a:focus, a:hover {
     margin-bottom: 1rem;
 }
 
+.jumbotron a.link {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+}
+
+.jumbotron a.link:focus, .jumbotron a.link:hover {
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+}
+
 .jumbotron-heading {
     font-size: 1.75rem;
     margin-bottom: 1rem;
