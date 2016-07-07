@@ -1,63 +1,60 @@
 ---
 active : overview
 app    : whatsmyco-web
+appurl : /whatsmyco/web/
 layout : app-page
 ---
 
-<!-- Main Content -->
-<div class="container main-content">
-
-    {% capture thecontent %}
-        <div class="row">
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Type Anything</h3>
-                <p>Type your own name. Or any name, title, quote, sentence. Or even upload files. And get a matching color.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Fun Color Discovery</h3>
-                <p>A fun and personal way to discover and share beautiful colors, or inspiration for any task that requires color.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Colors From Words</h3>
-                <p>Turn words you love into colors you love. Use them to breath new life into your Internet persona and online presence.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Use The Colors</h3>
-                <p>It's easy to copy the colors and their codes, and even use them as profile photos, or as beautiful modern wallpapers.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Share The Colors</h3>
-                <p>With the <i>Share on Facebook</i> button, it's an easy task to post your favorite color on your Facebook profile.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Works Anywhere</h3>
-                <p>There is nothing to install. All you need is a modern browser running on any PC, notebook, tablet, or smartphone.</p>
-            </div>
+{% capture thecontent %}
+    <div class="row">
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Type Anything</h3>
+            <p>Type your own name. Or any name, title, quote, sentence. Or even upload files. And get a matching color.</p>
         </div>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Features" %}
-
-    {% capture thecontent %}
-        <div class="row">
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="http://www.ilovefreesoftware.com/16/webware/find-matching-color-name-text.html" target="_blank">I Love Free Software</a>
-                </h3>
-                <p><q>WhatsMyCo is a pretty interesting concept. ... Is this website useful? I doubt it. Is it fun? It sure is.</q></p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="http://www.rockybytes.com/whatsmyco" target="_blank">Rocky Bytes</a>
-                </h3>
-                <p><q>Do you sometimes think about the colors that different things might be? Neither did I until recently.</q> (5 Stars – It Rocks!)</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="http://computertaal.info/2013/11/14/wat-is-mijn-kleur/" target="_blank">Computertaal</a>
-                </h3>
-                <p><q>Maybe you can use it to give your wedding card a personal touch: just combine your color with that of your partner.</q></p>
-            </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Fun Color Discovery</h3>
+            <p>A fun and personal way to discover and share beautiful colors, or inspiration for any task that requires color.</p>
         </div>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Reviews" %}
-</div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Colors From Words</h3>
+            <p>Turn words you love into colors you love. Use them to breath new life into your Internet persona and online presence.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Use The Colors</h3>
+            <p>It's easy to copy the colors and their codes, and even use them as profile photos, or as beautiful modern wallpapers.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Share The Colors</h3>
+            <p>With the <i>Share on Facebook</i> button, it's an easy task to post your favorite color on your Facebook profile.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Works Anywhere</h3>
+            <p>There is nothing to install. All you need is a modern browser running on any PC, notebook, tablet, or smartphone.</p>
+        </div>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="Features" %}
+
+{% capture thecontent %}
+    <div class="row">
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="http://www.ilovefreesoftware.com/16/webware/find-matching-color-name-text.html" target="_blank">I Love Free Software</a>
+            </h3>
+            <p><q>WhatsMyCo is a pretty interesting concept. ... Is this website useful? I doubt it. Is it fun? It sure is.</q></p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="http://www.rockybytes.com/whatsmyco" target="_blank">Rocky Bytes</a>
+            </h3>
+            <p><q>Do you sometimes think about the colors that different things might be? Neither did I until recently.</q> (5 Stars – It Rocks!)</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="http://computertaal.info/2013/11/14/wat-is-mijn-kleur/" target="_blank">Computertaal</a>
+            </h3>
+            <p><q>Maybe you can use it to give your wedding card a personal touch: just combine your color with that of your partner.</q></p>
+        </div>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="Reviews" %}

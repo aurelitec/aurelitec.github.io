@@ -2,10 +2,13 @@
 
 {% include jumbotrons/{{page.app}}.html %}
 
-{% include secondarymenus/{{page.app}}.html %}
+{% include templates/app-secondary-menu.html %}
 
-{{ content }}
+<!-- Main Content -->
+<main class="container site-main">
+    {{ content }}
+</main>
 
-{% include stripes/logos/{{page.app}}.html %}
+{% include stripes/featured/{{page.app}}.html %}
 
 {% include common/footer.html %}

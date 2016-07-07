@@ -1,56 +1,52 @@
 ---
 active : help
-app    : colorveil
+app    : colorveil-windows
+appurl : /colorveil/windows/
 layout : app-page
 ---
 
-    <!-- Main Content -->
-    <div class="container main-content">
-
-        {% capture thecontent %}
-            <div class="help-section">
-                <h3 class="help-section-heading">Running ColorVeil for the first time</h3>
-                <p>When you first open ColorVeil, your entire screen will get an Orange tint, and you will be presented with the following welcome screen:</p>
-                <p><img class="img-fluid" src="/img/apps/colorveil/help/colorveil-windows-help-welcome-screen.png" alt="ColorVeil Welcome Screen" /></p>
-                <p>
-                    The welcome screen tells you how to find the ColorVeil icon, toggle the veil, and open Settings. To stop seeing this screen every time you open Colorveil, uncheck
-                    the <b>Show this screen at startup</b> check box.
-                </p>
-            </div>
-
-            <div class="help-section">
-                <h3 class="help-section-heading">Turning the veil on and off</h3>
-                <p>To toggle the color veil, do one of the following:</p>
-                <ul>
-                    <li>Click the ColorVeil icon in the notification area, at the far right of the Windows taskbar.</li>
-                    <li>Press the <kbd>Ctrl+F11</kbd> customizable keyboard shortcut.</li>
-                    <li>If the Settings window is open, click the <b>Turn on/off veil</b> button near the top right corner.</li>
-                </ul>
-            </div>
-
-            <div class="help-section">
-                <h3 class="help-section-heading">Quitting Colorveil</h3>
-                <p>You can leave ColorVeil running in the notification area, so you can easily turn the color filter on and off when needed. However, if you really want to quit ColorVeil:</p>
-                <ol>
-                    <li>Right-click the ColorVeil notification icon to open the Settings window.</li>
-                    <li>Click the <b>Quit ColorVeil</b> button near the top right corner.</li>
-                </ol>
-            </div>
-        {% endcapture %}
-        {% include templates/contentsection.html heading="Quick Start" %}
-
-        {% capture thecontent %}
-            <div class="help-section">
-
-                <h3 class="help-section-heading">Changing ColorVeil settings</h3>
-                <p>To open the ColorVeil Settings window, do one of the following:</p>
-                <ul>
-                    <li>Right-click the ColorVeil icon in the notification area, at the far right of the Windows taskbar.</li>
-                    <li>Try running ColorVeil again, by clicking its Start Menu or Desktop shortcut.</li>
-                </ul>
-                <p><img class="img-fluid" src="/img/apps/colorveil/help/colorveil-windows-help-settings.png" alt="ColorVeil Settings Window" /></p>
-            </div>
-        {% endcapture %}
-        {% include templates/contentsection.html heading="Settings" %}
-
+{% capture thecontent %}
+    <div class="help-section">
+        <h3 class="help-section-heading">Running ColorVeil for the first time</h3>
+        <p>When you first open ColorVeil, your entire screen will get an Orange tint, and you will be presented with the following welcome screen:</p>
+        <p><img class="img-fluid" src="/img/apps/colorveil/help/colorveil-windows-help-welcome-screen.png" alt="ColorVeil Welcome Screen" /></p>
+        <p>
+            The welcome screen tells you how to find the ColorVeil icon, toggle the veil, and open Settings. To stop seeing this screen every time you open Colorveil, uncheck
+            the <b>Show this screen at startup</b> check box.
+        </p>
     </div>
+
+    <div class="help-section">
+        <h3 class="help-section-heading">Turning the veil on and off</h3>
+        <p>To toggle the color veil, do one of the following:</p>
+        <ul>
+            <li>Click the ColorVeil icon in the notification area, at the far right of the Windows taskbar.</li>
+            <li>Press the <kbd>Ctrl+F11</kbd> customizable keyboard shortcut.</li>
+            <li>If the Settings window is open, click the <b>Turn on/off veil</b> button near the top right corner.</li>
+        </ul>
+    </div>
+
+    <div class="help-section">
+        <h3 class="help-section-heading">Quitting Colorveil</h3>
+        <p>You can leave ColorVeil running in the notification area, so you can easily turn the color filter on and off when needed. However, if you really want to quit ColorVeil:</p>
+        <ol>
+            <li>Right-click the ColorVeil notification icon to open the Settings window.</li>
+            <li>Click the <b>Quit ColorVeil</b> button near the top right corner.</li>
+        </ol>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="Quick Start" %}
+
+{% capture thecontent %}
+    <div class="help-section">
+
+        <h3 class="help-section-heading">Changing ColorVeil settings</h3>
+        <p>To open the ColorVeil Settings window, do one of the following:</p>
+        <ul>
+            <li>Right-click the ColorVeil icon in the notification area, at the far right of the Windows taskbar.</li>
+            <li>Try running ColorVeil again, by clicking its Start Menu or Desktop shortcut.</li>
+        </ul>
+        <p><img class="img-fluid" src="/img/apps/colorveil/help/colorveil-windows-help-settings.png" alt="ColorVeil Settings Window" /></p>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="Settings" %}

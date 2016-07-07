@@ -1,27 +1,23 @@
 ---
 active : help
-app    : thumbico
+app    : thumbico-windows
+appurl : /thumbico/windows/
 layout : app-page
 ---
 
-<!-- Main Content -->
-<div class="container main-content">
-
-    {% capture thecontent %}
-        <div class="help-section">
-            <p>
-                Thumbico displays the thumbnail or icon of any file, image, document, video or program from your
-                Desktop or computer. But unlike Windows, which shows you small, standard sized images, Thumbico
-                gives you the large, any size "uncensored" version. Thumbico offers image saving and copying, a
-                Glass Mode for screenshot or screencast purposes, custom or standard sizes, and drag and drop support.
-            </p>
-            <p>
-                Software developers can find Thumbico useful for testing how their program icon looks like at different
-                sizes (Taskbar size, Start Menu size, Desktop size) and how the icon transparency blends with different
-                backgrounds.
-            </p>
-        </div>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Introduction" %}
-
-</div>
+{% capture thecontent %}
+    <div class="help-section">
+        <p>
+            Thumbico displays the thumbnail or icon of any file, image, document, video or program from your
+            Desktop or computer. But unlike Windows, which shows you small, standard sized images, Thumbico
+            gives you the large, any size "uncensored" version. Thumbico offers image saving and copying, a
+            Glass Mode for screenshot or screencast purposes, custom or standard sizes, and drag and drop support.
+        </p>
+        <p>
+            Software developers can find Thumbico useful for testing how their program icon looks like at different
+            sizes (Taskbar size, Start Menu size, Desktop size) and how the icon transparency blends with different
+            backgrounds.
+        </p>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="Introduction" %}

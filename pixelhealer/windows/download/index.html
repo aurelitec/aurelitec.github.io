@@ -1,53 +1,52 @@
 ---
-app    : pixelhealer
-layout : app-page
 active : download
+app    : pixelhealer-windows
+appurl : /pixelhealer/windows/
+layout : app-page
 ---
 
-<!-- Main Content -->
-<div class="container main-content">
-
-    {% capture thecontent %}
-    <h3 class="item-heading">Install PixelHealer 1.5.0.30</h3>
-    <p>
-        PixelHealer runs on any PC, laptop or tablet with Windows 10, 8, 7, Vista, or
-        XP<a title="On Windows XP you also need Microsoft .NET Framework 2.0 or above." href="http://www.microsoft.com/en-us/download/details.aspx?id=1639" target="_blank">*</a>.
-        The Installer program will copy PixelHealer on your PC, create a Start Menu entry, and set up an uninstaller.
-        <span class="label label-default">Only 98KB</span>
-    </p>
-    <p>
-        <a class="btn btn-primary" href="http://download.aurelitec.com/pixelhealer/windows/pixelhealer-install.exe" role="button">Download EXE</a>
-    </p>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Install" %}
-
-    {% capture thecontent %}
-    <h3 class="item-heading">Download PixelHealer 1.5.0.30 Portable</h3>
-    <p>
-        PixelHealer runs on any PC, laptop or tablet with Windows 10, 8, 7, Vista, or
-        XP<a title="On Windows XP you also need Microsoft .NET Framework 2.0 or above." href="http://www.microsoft.com/en-us/download/details.aspx?id=1639" target="_blank">*</a>.
-        No installation is required. Just download and unpack the ZIP archive.
-        <span class="label label-default">Only 25KB</span>
-    </p>
-    <p>
-        <a class="btn btn-primary" href="http://download.aurelitec.com/pixelhealer/windows/pixelhealer-portable.zip" role="button">Download ZIP</a>
-    </p>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Portable" %}
-
-    <!-- PixelHealer Clean Awards -->
-    <div class="featured-logos">
-        <a href="http://www.softpedia.com/get/System/System-Info/PixelHealer.shtml" target="_blank">
-            <img height="120" class="featured-logo" src="/img/third/reviews/s/softpedia/softpedia-clean-award.png" alt="Softpedia Clean Award" />
-        </a>
-    </div>
-
-</div>
-
-<div class="container stripe stripe-bottom">
-    <p>
+{% capture thecontent %}
+    <p class="square-middle">
         PixelHealer is free for use in any environment, including but not necessarily limited to: personal, academic,
         commercial, government, business, non-profit, and for-profit. Before using PixelHealer, you must accept its
         <a href="/pixelhealer/windows/license/">License Agreement</a>.
     </p>
-</div>
+{% endcapture %}
+{% include templates/contentsection.html heading="License" %}
+
+{% capture thecontent %}
+<h3 class="item-heading">Install PixelHealer 1.5.0.30</h3>
+<p>
+    PixelHealer runs on any PC, laptop or tablet with Windows 10, 8, 7, Vista, or
+    XP<a title="On Windows XP you also need Microsoft .NET Framework 2.0 or above." href="http://www.microsoft.com/en-us/download/details.aspx?id=1639" target="_blank">*</a>.
+    The Installer program will copy PixelHealer on your PC, create a Start Menu entry, and set up an uninstaller.
+</p>
+<p>
+    <a class="btn btn-primary" href="http://download.aurelitec.com/pixelhealer/windows/pixelhealer-install.exe" role="button">Download EXE</a>
+    <span class="label label-default m-l-1">Only 98KB</span>
+</p>
+{% endcapture %}
+{% include templates/contentsection.html heading="Install" %}
+
+{% capture thecontent %}
+<h3 class="item-heading">Download PixelHealer 1.5.0.30 Portable</h3>
+<p>
+    PixelHealer runs on any PC, laptop or tablet with Windows 10, 8, 7, Vista, or
+    XP<a title="On Windows XP you also need Microsoft .NET Framework 2.0 or above." href="http://www.microsoft.com/en-us/download/details.aspx?id=1639" target="_blank">*</a>.
+    No installation is required. Just download and unpack the ZIP archive.
+</p>
+<p>
+    <a class="btn btn-primary" href="http://download.aurelitec.com/pixelhealer/windows/pixelhealer-portable.zip" role="button">Download ZIP</a>
+    <span class="label label-default m-l-1">Only 25KB</span>
+</p>
+{% endcapture %}
+{% include templates/contentsection.html heading="Portable" %}
+
+{% capture thecontent %}
+    <div class="square-middle">
+        <a href="http://www.softpedia.com/get/System/System-Info/PixelHealer.shtml" target="_blank">
+            <img height="120" class="featured-logo" src="/img/third/reviews/s/softpedia/softpedia-clean-award.png" alt="Softpedia Clean Award" />
+        </a>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="100% Clean" %}

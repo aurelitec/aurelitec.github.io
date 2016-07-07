@@ -1,83 +1,80 @@
 ---
 active : overview
 app    : colortypist-windows
+appurl : /colortypist/windows/
 layout : app-page
 ---
 
-<!-- Main Content -->
-<div class="container main-content">
-
-    {% capture thecontent %}
-        <div class="row">
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">View Any Web Color</h3>
-                <p>Type or paste the name or HTML code of any web color, and see it fill your entire screen, in real-time, while you type.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Type In Any Format</h3>
-                <p>Enter color names, HTML codes, RGB triplets or integer values. And easily convert between any of these formats.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Wallpaper Changer</h3>
-                <p>Easily set your favorite tint as your Desktop Wallpaper. You may get a more modern looking Desktop, and a faster PC.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h4 class="item-heading">Copy And Reuse</h4>
-                <p>Copy and reuse html colors in external apps, for various purposes. Such as generating web color schemes, or palettes.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h4 class="item-heading">Save As Images</h4>
-                <p>Generate and save images of any size, filled with the color of your choice. For anonymous profile images, or backgrounds.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h4 class="item-heading">Save As Portable Files</h4>
-                <p>Save any color in a tiny HTML file. Then open the file and view the color in any browser, on any PC, tablet or smartphone.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h4 class="item-heading">Paste From Anywhere</h4>
-                <p>Paste colors into Colortypist. From any external site or app, such as a web color picker, or a HTML color wheel.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h4 class="item-heading">Easy To Use</h4>
-                <p>Colortypist has a clean and easy to use interface. Type colors in the large edit box, and use the menus for the main functions.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h4 class="item-heading">Useful And Fun</h4>
-                <p>Learn web color names by trial and error. Or have fun by typing weird color names, or words that are also color codes.</p>
-            </div>
+{% capture thecontent %}
+    <div class="row">
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">View Any Web Color</h3>
+            <p>Type or paste the name or HTML code of any web color, and see it fill your entire screen, in real-time, while you type.</p>
         </div>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Features" %}
-
-    {% capture thecontent %}
-        <div class="row">
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="http://betanews.com/2015/11/20/colortypist-is-a-full-screen-color-viewer/" target="_blank">BetaNews</a>
-                </h3>
-                <p><q>Colortypist is a smart graphic design addon, well worth its 40KB download. Go grab a copy now.</q></p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="http://www.rockybytes.com/colortypist" target="_blank">Rocky Bytes</a>
-                </h3>
-                <p><q>Just really like discovering different colors? Colortypist is the application for you.</q> (Five Stars – It Rocks!)</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="http://www.ghacks.net/2011/09/07/colortypist-realtime-desktop-wallpaper-color-selector/" target="_blank">Ghacks</a>
-                </h3>
-                <p><q>Colortypist, Realtime Desktop Wallpaper Color Selector: a better way of experimenting with background colors.</q></p>
-            </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Type In Any Format</h3>
+            <p>Enter color names, HTML codes, RGB triplets or integer values. And easily convert between any of these formats.</p>
         </div>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Reviews" %}
-</div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Wallpaper Changer</h3>
+            <p>Easily set your favorite tint as your Desktop Wallpaper. You may get a more modern looking Desktop, and a faster PC.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h4 class="item-heading">Copy And Reuse</h4>
+            <p>Copy and reuse html colors in external apps, for various purposes. Such as generating web color schemes, or palettes.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h4 class="item-heading">Save As Images</h4>
+            <p>Generate and save images of any size, filled with the color of your choice. For anonymous profile images, or backgrounds.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h4 class="item-heading">Save As Portable Files</h4>
+            <p>Save any color in a tiny HTML file. Then open the file and view the color in any browser, on any PC, tablet or smartphone.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h4 class="item-heading">Paste From Anywhere</h4>
+            <p>Paste colors into Colortypist. From any external site or app, such as a web color picker, or a HTML color wheel.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h4 class="item-heading">Easy To Use</h4>
+            <p>Colortypist has a clean and easy to use interface. Type colors in the large edit box, and use the menus for the main functions.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h4 class="item-heading">Useful And Fun</h4>
+            <p>Learn web color names by trial and error. Or have fun by typing weird color names, or words that are also color codes.</p>
+        </div>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="Features" %}
 
-<section class="container stripe stripe-bottom">
-    <blockquote class="blockquote p-x-3">
+{% capture thecontent %}
+    <div class="row">
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="http://betanews.com/2015/11/20/colortypist-is-a-full-screen-color-viewer/" target="_blank">BetaNews</a>
+            </h3>
+            <p><q>Colortypist is a smart graphic design addon, well worth its 40KB download. Go grab a copy now.</q></p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="http://www.rockybytes.com/colortypist" target="_blank">Rocky Bytes</a>
+            </h3>
+            <p><q>Just really like discovering different colors? Colortypist is the application for you.</q> (Five Stars – It Rocks!)</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="http://www.ghacks.net/2011/09/07/colortypist-realtime-desktop-wallpaper-color-selector/" target="_blank">Ghacks</a>
+            </h3>
+            <p><q>Colortypist, Realtime Desktop Wallpaper Color Selector: a better way of experimenting with background colors.</q></p>
+        </div>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="Reviews" %}
+
+{% capture thecontent %}
+    <blockquote class="blockquote">
         <p><q>It's clear that this program was not only made for graphic designers, but by them, as well. It's stylish, smooth, and does exactly what you need it to in a matter of seconds. It's even portable so you can have it with you on a thumb drive and use it on any computer. If you do any work with colors or HTML, Colortypist is a phenomenal download to have.</q></p>
-        <footer class="blockquote-footer">Download Editors' Rating: Excellent</footer>
+        <footer class="blockquote-footer"><a href="http://download.cnet.com/Colortypist/3000-2072_4-75627679.html" target="_blank">Download Editors' Rating: Excellent</a></footer>
     </blockquote>
-    <p class="more"><a href="/cinemadrape/reviews/">More Reviews and Testimonials</a></p>
-</section>
+{% endcapture %}
+{% include templates/contentsection.html heading="Quotes" %}

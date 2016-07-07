@@ -1,52 +1,48 @@
 ---
-app    : injuredpixels-windows
-layout : app-page
 active : history
+app    : injuredpixels-windows
+appurl : /injuredpixels/windows/
+layout : app-page
 ---
 
-<!-- Main Content -->
-<div class="container main-content">
+{% capture thecontent %}
+<ul class="list-group">
+    <li class="list-group-item">Improved modern interface</li>
+    <li class="list-group-item">Improved native support for Windows 8</li>
+    <li class="list-group-item"><time class="text-muted"><small>October 9, 2012</small></time></li>
+</ul>
+{% endcapture %}
+{% include templates/contentsection.html heading="Version 3.0" %}
 
-    {% capture thecontent %}
-    <ul class="list-group">
-        <li class="list-group-item">Improved modern interface</li>
-        <li class="list-group-item">Improved native support for Windows 8</li>
-        <li class="list-group-item"><time class="text-muted"><small>October 9, 2012</small></time></li>
-    </ul>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Version 3.0" %}
+{% capture thecontent %}
+<ul class="list-group">
+    <li class="list-group-item">
+        <span class="label label-default label-pill pull-xs-right">New</span>
+        Added multi-monitor support to check any or all connected monitors/displays for dead pixels
+    </li>
+    <li class="list-group-item"><time class="text-muted"><small>October 12, 2010</small></time></li>
+</ul>
+{% endcapture %}
+{% include templates/contentsection.html heading="Version 2.1" %}
 
-    {% capture thecontent %}
-    <ul class="list-group">
-        <li class="list-group-item">
-            <span class="label label-default label-pill pull-xs-right">New</span>
-            Added multi-monitor support to check any or all connected monitors/displays for dead pixels
-        </li>
-        <li class="list-group-item"><time class="text-muted"><small>October 12, 2010</small></time></li>
-    </ul>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Version 2.1" %}
+{% capture thecontent %}
+<ul class="list-group">
+    <li class="list-group-item">
+        <span class="label label-default label-pill pull-xs-right">New</span>
+        Added a new edition of the program in the form of a HTML Application (HTA)
+    </li>
+    <li class="list-group-item"><time class="text-muted"><small>April 30, 2010</small></time></li>
+</ul>
+{% endcapture %}
+{% include templates/contentsection.html heading="Version 2.0" %}
 
-    {% capture thecontent %}
-    <ul class="list-group">
-        <li class="list-group-item">
-            <span class="label label-default label-pill pull-xs-right">New</span>
-            Added a new edition of the program in the form of a HTML Application (HTA)
-        </li>
-        <li class="list-group-item"><time class="text-muted"><small>April 30, 2010</small></time></li>
-    </ul>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Version 2.0" %}
-
-    {% capture thecontent %}
-    <ul class="list-group">
-        <li class="list-group-item">
-            <span class="label label-default label-pill pull-xs-right">New</span>
-            First public release
-        </li>
-        <li class="list-group-item"><time class="text-muted"><small>December 03, 2009</small></time></li>
-    </ul>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Version 1.0" %}
-
-</div>
+{% capture thecontent %}
+<ul class="list-group">
+    <li class="list-group-item">
+        <span class="label label-default label-pill pull-xs-right">New</span>
+        First public release
+    </li>
+    <li class="list-group-item"><time class="text-muted"><small>December 03, 2009</small></time></li>
+</ul>
+{% endcapture %}
+{% include templates/contentsection.html heading="Version 1.0" %}

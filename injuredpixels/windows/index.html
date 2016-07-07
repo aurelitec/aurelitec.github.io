@@ -1,63 +1,60 @@
 ---
 active : overview
 app    : injuredpixels-windows
+appurl : /injuredpixels/windows/
 layout : app-page
 ---
 
-<!-- Main Content -->
-<div class="container main-content">
-
-    {% capture thecontent %}
-        <div class="row">
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Test Before Buying</h3>
-                <p>Run InjuredPixels without installation, and check any LCD monitor or tablet for dead pixels or scratches. Even in the store.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Test After Buying</h3>
-                <p>Test your monitor during the warranty period, as you may get a replacement according to its dead pixel policy.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Injured &amp; Dead Pixels</h3>
-                <p>Easily check for hot, dead or stuck pixels, for pixels that do not illuminate properly or do not display the correct color output.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Straightforward</h3>
-                <p>InjuredPixels fills the entire screen with a single color, so you can check for pixels that do not match the selected color.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Easy To Use</h3>
-                <p>Just click or use the arrow keys to cycle through colors, or right-click to get the menu with the main commands.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Multi-Monitor Support</h3>
-                <p>InjuredPixels has built-in multi-monitor support, so you can check all connected monitors for dead or defective pixels.</p>
-            </div>
+{% capture thecontent %}
+    <div class="row">
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Test Before Buying</h3>
+            <p>Run InjuredPixels without installation, and check any LCD monitor or tablet for dead pixels or scratches. Even in the store.</p>
         </div>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Features" %}
-
-    {% capture thecontent %}
-        <div class="row">
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="http://betanews.com/2012/12/26/injuredpixels-reveals-monitor-defects/" target="_blank">BetaNews</a>
-                </h3>
-                <p><q>As hardware diagnostics applications go, InjuredPixels is just about as simple a program as you'll see.</q></p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="http://downloads.pcauthority.com.au/article/29129-injuredpixels_hta_edition" target="_blank">PC &amp; Tech Authority</a>
-                </h3>
-                <p><q>Verdict: A simple and convenient tool which makes it much easier to locate dead pixels on an LCD display.</q></p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="http://www.rockybytes.com/injuredpixels" target="_blank">Rocky Bytes</a>
-                </h3>
-                <p><q>Download InjuredPixels and make sure that you don't end up wasting hundreds and thousands of dollars.</q></p>
-            </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Test After Buying</h3>
+            <p>Test your monitor during the warranty period, as you may get a replacement according to its dead pixel policy.</p>
         </div>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Reviews" %}
-</div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Injured &amp; Dead Pixels</h3>
+            <p>Easily check for hot, dead or stuck pixels, for pixels that do not illuminate properly or do not display the correct color output.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Straightforward</h3>
+            <p>InjuredPixels fills the entire screen with a single color, so you can check for pixels that do not match the selected color.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Easy To Use</h3>
+            <p>Just click or use the arrow keys to cycle through colors, or right-click to get the menu with the main commands.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Multi-Monitor Support</h3>
+            <p>InjuredPixels has built-in multi-monitor support, so you can check all connected monitors for dead or defective pixels.</p>
+        </div>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="Features" %}
+
+{% capture thecontent %}
+    <div class="row">
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="http://betanews.com/2012/12/26/injuredpixels-reveals-monitor-defects/" target="_blank">BetaNews</a>
+            </h3>
+            <p><q>As hardware diagnostics applications go, InjuredPixels is just about as simple a program as you'll see.</q></p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="http://downloads.pcauthority.com.au/article/29129-injuredpixels_hta_edition" target="_blank">PC &amp; Tech Authority</a>
+            </h3>
+            <p><q>Verdict: A simple and convenient tool which makes it much easier to locate dead pixels on an LCD display.</q></p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="http://www.rockybytes.com/injuredpixels" target="_blank">Rocky Bytes</a>
+            </h3>
+            <p><q>Download InjuredPixels and make sure that you don't end up wasting hundreds and thousands of dollars.</q></p>
+        </div>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="Reviews" %}

@@ -1,83 +1,80 @@
 ---
 active : overview
-app    : htmtied
+app    : htmtied-windows
+appurl : /htmtied/windows/
 layout : app-page
 ---
 
-<!-- Main Content -->
-<div class="container main-content">
-
-    {% capture thecontent %}
-        <div class="row">
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Free Bookmarks</h3>
-                <p>Free as in liberated: save your Internet bookmarks as tiny files, that you can use anywhere, outside your browser.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Portable Bookmarks</h3>
-                <p>Use your Internet bookmarks on any PC, tablet, smartphone, or in the cloud. On Windows, Mac, Android, iOS, or Linux.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Standard HTML Files</h3>
-                <p>The bookmark files are actually tiny HTML files, that load the original Internet address, when opened in any browser.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Easy as 1, 2, 3</h3>
-                <p>Copy any Internet address to the Clipboard, run HTMtied, and paste the magically created portable bookmark file.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Convert En Masse</h3>
-                <p>Copy multiple addresses on separate lines to the Clipboard, or drag and drop any number of URL files over HTMtied.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">The Direct Mode</h3>
-                <p>No more manual pasting: click the HTMtied Direct shortcut to convert and paste all bookmarks to a preferred location.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Online Bookmarks</h3>
-                <p>The portable bookmark files can easily be uploaded or synchronized in the cloud, with online storage services.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Internet Favorites</h3>
-                <p>Liberate your Internet Explorer Favorites: copy the URL files to the Clipboard, or drag and drop them on the HTMtied icon.</p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="item-heading">Easy To Use</h3>
-                <p>HTMtied is so easy to use that it doesn't even need a user interface. On success you'll hear the famous "Tada" sound.</p>
-            </div>
+{% capture thecontent %}
+    <div class="row">
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Free Bookmarks</h3>
+            <p>Free as in liberated: save your Internet bookmarks as tiny files, that you can use anywhere, outside your browser.</p>
         </div>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Features" %}
-
-    {% capture thecontent %}
-        <div class="row">
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="http://www.nirmaltv.com/2011/09/14/convert-any-internet-link-to-html-file-with-htmtied/" target="_blank">NirmalTV</a>
-                </h3>
-                <p><q>HTMtied is a very useful and yet simple tool to create an HTML file for any website links or URLs in an easy way.</q></p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="http://www.addictivetips.com/windows-tips/htmtied-create-html-file-shortcuts-for-website-to-run-anywhere/" target="_blank">AddictiveTips</a>
-                </h3>
-                <p><q>Create website shortcuts for opening them in the default browsers of numerous OS platforms and portable devices.</q></p>
-            </div>
-            <div class="col-lg-4 content-item">
-                <h3 class="quote-heading">
-                    <a class="heading-link" href="https://dottech.org/167449/how-to-instantly-convert-any-url-to-html-in-windows-tip/" target="_blank">dotTech</a>
-                </h3>
-                <p><q>If you're looking for a quick way to add website shortcuts to the Windows desktop, give HTMtied a try.</q></p>
-            </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Portable Bookmarks</h3>
+            <p>Use your Internet bookmarks on any PC, tablet, smartphone, or in the cloud. On Windows, Mac, Android, iOS, or Linux.</p>
         </div>
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Reviews" %}
-</div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Standard HTML Files</h3>
+            <p>The bookmark files are actually tiny HTML files, that load the original Internet address, when opened in any browser.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Easy as 1, 2, 3</h3>
+            <p>Copy any Internet address to the Clipboard, run HTMtied, and paste the magically created portable bookmark file.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Convert En Masse</h3>
+            <p>Copy multiple addresses on separate lines to the Clipboard, or drag and drop any number of URL files over HTMtied.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">The Direct Mode</h3>
+            <p>No more manual pasting: click the HTMtied Direct shortcut to convert and paste all bookmarks to a preferred location.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Online Bookmarks</h3>
+            <p>The portable bookmark files can easily be uploaded or synchronized in the cloud, with online storage services.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Internet Favorites</h3>
+            <p>Liberate your Internet Explorer Favorites: copy the URL files to the Clipboard, or drag and drop them on the HTMtied icon.</p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="item-heading">Easy To Use</h3>
+            <p>HTMtied is so easy to use that it doesn't even need a user interface. On success you'll hear the famous "Tada" sound.</p>
+        </div>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="Features" %}
 
-<section class="container stripe stripe-bottom">
-    <blockquote class="blockquote p-x-3">
+{% capture thecontent %}
+    <div class="row">
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="http://www.nirmaltv.com/2011/09/14/convert-any-internet-link-to-html-file-with-htmtied/" target="_blank">NirmalTV</a>
+            </h3>
+            <p><q>HTMtied is a very useful and yet simple tool to create an HTML file for any website links or URLs in an easy way.</q></p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="http://www.addictivetips.com/windows-tips/htmtied-create-html-file-shortcuts-for-website-to-run-anywhere/" target="_blank">AddictiveTips</a>
+            </h3>
+            <p><q>Create website shortcuts for opening them in the default browsers of numerous OS platforms and portable devices.</q></p>
+        </div>
+        <div class="col-lg-4 content-item">
+            <h3 class="quote-heading">
+                <a class="heading-link" href="https://dottech.org/167449/how-to-instantly-convert-any-url-to-html-in-windows-tip/" target="_blank">dotTech</a>
+            </h3>
+            <p><q>If you're looking for a quick way to add website shortcuts to the Windows desktop, give HTMtied a try.</q></p>
+        </div>
+    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="Reviews" %}
+
+{% capture thecontent %}
+    <blockquote class="blockquote">
         <p><q>For shortcuts to links HTMtied is second to none. It's tiny, portable &amp; simple! Simply copy the URL, activate HTMtied [DA DA], then paste to desktop or any folder. The shortcut will always open your default browser.</q></p>
         <footer class="blockquote-footer">User comment on dotTech</footer>
     </blockquote>
-    <p class="more"><a href="/htmtied/reviews/">More Reviews and Testimonials</a></p>
-</section>
+{% endcapture %}
+{% include templates/contentsection.html heading="Testimonials" %}

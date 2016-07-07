@@ -1,18 +1,14 @@
 ---
-app    : injuredpixels-windows
-layout : app-page
 active : reviews
+app    : injuredpixels-windows
+appurl : /injuredpixels/windows/
+layout : app-page
 ---
 
-<!-- Main Content -->
-<div class="container main-content">
-
-    {% capture thecontent %}
-    {% assign reviews = site.reviews | where: 'app', 'InjuredPixels' | sort: 'by', 'last' %}
-    {% for review in reviews %}
-        {% include templates/review.html %}
-    {% endfor %}
-    {% endcapture %}
-    {% include templates/contentsection.html heading="Reviews" %}
-
-</div>
+{% capture thecontent %}
+{% assign reviews = site.reviews | where: 'app', 'InjuredPixels' | sort: 'by', 'last' %}
+{% for review in reviews %}
+    {% include templates/review.html %}
+{% endfor %}
+{% endcapture %}
+{% include templates/contentsection.html heading="Reviews" %}

@@ -1,5 +1,4 @@
 body {
-    background: url("../img/theme/backgrounds/body-texture.png") repeat #F5F5F5;
     color: #373737;
     font-family: 'Monda', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -62,7 +61,7 @@ a:focus, a:hover {
 .jumbotron {
     background: #1badea url("../img/theme/backgrounds/jumbotron-background.png") no-repeat top center;
     color: #fff;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .jumbotron a.link {
@@ -104,10 +103,15 @@ a:focus, a:hover {
     text-align: center;
 }
 
-
+/*
 .main-content {
     background: #fff;
     padding-bottom: 1rem;
+    padding-top: 4rem;
+}
+*/
+
+.site-main {
     padding-top: 4rem;
 }
 
@@ -199,21 +203,25 @@ a:focus, a:hover {
  * Featured logos.
  */
 
+/*
 .featured-logos {
-    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
+*/
 
 .featured-logos a:focus, .featured-logos a:hover {
     text-decoration: none;
 }
 
 .featured-logo {
-    margin: 0 2rem 1rem 2rem;
+    margin: 0 2rem;
 }
 
-.stripe-featured-logos {
+.featured-stripe {
     background: #1badea;
     padding: 3rem 0 2rem 0;
+    text-align: center;
 }
 
 /*
@@ -257,6 +265,7 @@ a:focus, a:hover {
 *****************************/
 
 .site-footer {
+    background: #f0f0f0;
     padding: 3rem 0;
     text-align: center;
 }
@@ -398,4 +407,11 @@ a:focus, a:hover {
 
 .image-list-item {
     margin: 0 2rem 1rem 2rem;
+}
+
+
+.square-middle {
+    height: 140px;
+    display: table-cell;
+    vertical-align: middle;
 }

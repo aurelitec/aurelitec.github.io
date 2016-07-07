@@ -1,44 +1,44 @@
 ---
-app    : colorveil
-layout : app-page
 active : download
+app    : colorveil-windows
+appurl : /colorveil/windows/
+layout : app-page
 ---
 
-    <!-- Main Content -->
-    <div class="container main-content">
+{% capture thecontent %}
+    <p class="square-middle">
+        ColorVeil is free for use in any environment, including but not necessarily limited to: personal, academic,
+        commercial, government, business, non-profit, and for-profit. Before using ColorVeil, you must accept its
+        <a href="/colorveil/windows/license/">License Agreement</a>.
+    </p>
+{% endcapture %}
+{% include templates/contentsection.html heading="License" %}
 
-        {% capture thecontent %}
-        <h3 class="item-heading">Install ColorVeil 3.0.2.152</h3>
-        <p>You can install and run ColorVeil on any PC, notebook or tablet with Windows 10, 8, 7, Vista, or XP<a title="On Windows XP you also need Microsoft .NET Framework 2.0 or above." href="http://www.microsoft.com/en-us/download/details.aspx?id=1639" target="_blank">*</a>. The Installer program will copy ColorVeil on your computer, create a Start Menu entry and set up an uninstaller.</p>
-        <p>
-            <a class="btn btn-primary" href="/colorveil/windows/download/" role="button">Download 32-bit MSI</a>
-            <a class="btn btn-primary" href="/colorveil/windows/download/" role="button">Download 64-bit MSI</a>
-        </p>
-        {% endcapture %}
-        {% include templates/contentsection.html heading="Install" %}
+{% capture thecontent %}
+<h3 class="item-heading">Install ColorVeil 3.0.2.152</h3>
+<p>You can install and run ColorVeil on any PC, notebook or tablet with Windows 10, 8, 7, Vista, or XP<a title="On Windows XP you also need Microsoft .NET Framework 2.0 or above." href="http://www.microsoft.com/en-us/download/details.aspx?id=1639" target="_blank">*</a>. The Installer program will copy ColorVeil on your computer, create a Start Menu entry and set up an uninstaller.</p>
+<p>
+    <a class="btn btn-primary" href="http://download.aurelitec.com/colorveil/windows/version/3.0.2.152/colorveil.msi" role="button">Download 32-bit MSI</a>
+    <a class="btn btn-primary" href="http://download.aurelitec.com/colorveil/windows/version/3.0.2.152/colorveil-x64.msi" role="button">Download 64-bit MSI</a>
+</p>
+{% endcapture %}
+{% include templates/contentsection.html heading="Install" %}
 
-        {% capture thecontent %}
-        <h3 class="item-heading">Download ColorVeil 3.0.2.152 Portable</h3>
-        <p>You can run ColorVeil on any PC, notebook or tablet with Windows 10, 8, 7, Vista, or XP<a title="On Windows XP you also need Microsoft .NET Framework 2.0 or above." href="http://www.microsoft.com/en-us/download/details.aspx?id=1639" target="_blank">*</a>. No installation is required. Just download and unpack the ZIP archive.</p>
-        <p>
-            <a class="btn btn-primary" href="/colorveil/windows/download/" role="button">Download ZIP</a>
-        </p>
-        {% endcapture %}
-        {% include templates/contentsection.html heading="Portable" %}
+{% capture thecontent %}
+<h3 class="item-heading">Download ColorVeil 3.0.2.152 Portable</h3>
+<p>You can run ColorVeil on any PC, notebook or tablet with Windows 10, 8, 7, Vista, or XP<a title="On Windows XP you also need Microsoft .NET Framework 2.0 or above." href="http://www.microsoft.com/en-us/download/details.aspx?id=1639" target="_blank">*</a>. No installation is required. Just download and unpack the ZIP archive.</p>
+<p>
+    <a class="btn btn-primary" href="http://download.aurelitec.com/colorveil/windows/version/3.0.2.152/colorveil-portable.zip" role="button">Download ZIP</a>
+</p>
+{% endcapture %}
+{% include templates/contentsection.html heading="Portable" %}
 
-        <!-- ColorVeil Clean Awards -->
-        <div class="featured-logos">
-            <a href="http://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/ColorVeil.shtml" target="_blank">
-                <img height="120" class="featured-logo" src="/img/third/reviews/s/softpedia/softpedia-clean-award.png" alt="Softpedia Clean Award" />
-            </a>
-            <a href="http://colorveil.software.informer.com" target="_blank">
-                <img height="120" class="featured-logo" src="/img/third/reviews/s/software-informer/software-informer-clean-award.png" alt="Software Informer Virus Free award" />
-            </a>
-        </div>
-
+{% capture thecontent %}
+    <div class="square-middle">
+        <a href="http://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/ColorVeil.shtml" target="_blank">
+            <img height="120" class="featured-logo" src="/img/third/reviews/s/softpedia/softpedia-clean-award.png" alt="Softpedia Clean Award" /></a>
+        <a href="http://colorveil.software.informer.com" target="_blank">
+            <img height="120" class="featured-logo" src="/img/third/reviews/s/software-informer/software-informer-clean-award.png" alt="Software Informer Virus Free award" /></a>
     </div>
-
-
-    <div class="container stripe stripe-bottom">
-        <p>ColorVeil is free for use in any environment, including but not necessarily limited to: personal, academic, commercial, government, business, non-profit, and for-profit. Before using ColorVeil, you must accept its <a href="/colorveil/windows/license/">License Agreement</a>.</p>
-    </div>
+{% endcapture %}
+{% include templates/contentsection.html heading="100% Clean" %}

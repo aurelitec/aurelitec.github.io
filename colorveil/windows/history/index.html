@@ -1,62 +1,58 @@
 ---
-app    : colorveil
-layout : app-page
 active : history
+app    : colorveil-windows
+appurl : /colorveil/windows/
+layout : app-page
 ---
 
-    <!-- Main Content -->
-    <div class="container main-content">
+{% capture thecontent %}
+<ul class="list-group">
+    <li class="list-group-item">
+        <span class="label label-default label-pill pull-xs-right">New</span>
+        Added a customizable keyword shortcut to turn the color veil on and off
+    </li>
+    <li class="list-group-item">
+        <span class="label label-default label-pill pull-xs-right">New</span>
+        Added an option to automatically start ColorVeil on system startup
+    </li>
+    <li class="list-group-item">
+        <span class="label label-default label-pill pull-xs-right">New</span>
+        Added the ability to select the veil color by entering a HTML color code or name
+    </li>
+    <li class="list-group-item">
+        <span class="label label-default label-pill pull-xs-right">New</span>
+        Added a basic Check for Updates feature
+    </li>
+    <li class="list-group-item">Improved and simplified Settings window, with tabs</li>
+    <li class="list-group-item">
+        <span class="label label-default label-pill pull-xs-right">New</span>
+        Added 32-bit and 64-bit MSI (Windows Installer) installation packages
+    </li>
+    <li class="list-group-item"><time class="text-muted"><small>June 21, 2016</small></time></li>
+</ul>
+{% endcapture %}
+{% include templates/contentsection.html heading="Version 3.0" %}
 
-        {% capture thecontent %}
-        <ul class="list-group">
-            <li class="list-group-item">
-                <span class="label label-default label-pill pull-xs-right">New</span>
-                Added a customizable keyword shortcut to turn the color veil on and off
-            </li>
-            <li class="list-group-item">
-                <span class="label label-default label-pill pull-xs-right">New</span>
-                Added an option to automatically start ColorVeil on system startup
-            </li>
-            <li class="list-group-item">
-                <span class="label label-default label-pill pull-xs-right">New</span>
-                Added the ability to select the veil color by entering a HTML color code or name
-            </li>
-            <li class="list-group-item">
-                <span class="label label-default label-pill pull-xs-right">New</span>
-                Added a basic Check for Updates feature
-            </li>
-            <li class="list-group-item">Improved and simplified Settings window, with tabs</li>
-            <li class="list-group-item">
-                <span class="label label-default label-pill pull-xs-right">New</span>
-                Added 32-bit and 64-bit MSI (Windows Installer) installation packages
-            </li>
-            <li class="list-group-item"><time class="text-muted"><small>June 21, 2016</small></time></li>
-        </ul>
-        {% endcapture %}
-        {% include templates/contentsection.html heading="Version 3.0" %}
+{% capture thecontent %}
+<ul class="list-group">
+    <li class="list-group-item">Simplified veil control interface</li>
+    <li class="list-group-item">
+        <span class="label label-default label-pill pull-xs-right">New</span>
+        Added portable and installer editions
+    </li>
+    <li class="list-group-item">Improved native support for Windows 10/8.1/8</li>
+    <li class="list-group-item"><time class="text-muted"><small>August 5, 2015</small></time></li>
+</ul>
+{% endcapture %}
+{% include templates/contentsection.html heading="Version 2.0" %}
 
-        {% capture thecontent %}
-        <ul class="list-group">
-            <li class="list-group-item">Simplified veil control interface</li>
-            <li class="list-group-item">
-                <span class="label label-default label-pill pull-xs-right">New</span>
-                Added portable and installer editions
-            </li>
-            <li class="list-group-item">Improved native support for Windows 10/8.1/8</li>
-            <li class="list-group-item"><time class="text-muted"><small>August 5, 2015</small></time></li>
-        </ul>
-        {% endcapture %}
-        {% include templates/contentsection.html heading="Version 2.0" %}
-
-        {% capture thecontent %}
-        <ul class="list-group">
-            <li class="list-group-item">
-                <span class="label label-default label-pill pull-xs-right">New</span>
-                First public release.
-            </li>
-            <li class="list-group-item"><time class="text-muted"><small>February 18, 2013</small></time></li>
-        </ul>
-        {% endcapture %}
-        {% include templates/contentsection.html heading="Version 1.0" %}
-
-    </div>
+{% capture thecontent %}
+<ul class="list-group">
+    <li class="list-group-item">
+        <span class="label label-default label-pill pull-xs-right">New</span>
+        First public release.
+    </li>
+    <li class="list-group-item"><time class="text-muted"><small>February 18, 2013</small></time></li>
+</ul>
+{% endcapture %}
+{% include templates/contentsection.html heading="Version 1.0" %}

@@ -3,23 +3,18 @@ layout  : simple-page
 heading : Reviews
 ---
 
-    <!-- Main Content -->
-    <div class="container main-content">
+{% capture thecontent %}
+{% assign reviews = site.reviews | sort: 'by', 'last' %}
+{% for review in reviews %}
+    {% include templates/review.html showappname="true" %}
+{% endfor %}
+{% endcapture %}
+{% include templates/contentsection.html heading="Reviews" %}
 
-        {% capture thecontent %}
-        {% assign reviews = site.reviews | sort: 'by', 'last' %}
-        {% for review in reviews %}
-            {% include templates/review.html showappname="true" %}
-        {% endfor %}
-        {% endcapture %}
-        {% include templates/contentsection.html heading="Reviews" %}
-
-        {% capture thecontent %}
-        {% assign testimonials = site.testimonials | sort: 'by', 'last' %}
-        {% for testimonial in testimonials %}
-            {% include templates/testimonial.html showappname="true" %}
-        {% endfor %}
-        {% endcapture %}
-        {% include templates/contentsection.html heading="Testimonials" %}
-
-    </div>
+{% capture thecontent %}
+{% assign testimonials = site.testimonials | sort: 'by', 'last' %}
+{% for testimonial in testimonials %}
+    {% include templates/testimonial.html showappname="true" %}
+{% endfor %}
+{% endcapture %}
+{% include templates/contentsection.html heading="Testimonials" %}
