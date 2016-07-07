@@ -1,13 +1,14 @@
+# Jekyll SEO Tag plugin
+title       : "Aurelitec"
+description : "Creating free out of the box programs and apps since 1999"
+author      : aurelitec
+twitter:
+  username  : aurelitec
+
 collections:
   - reviews
   - testimonials
 
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-
 gems:
   - jekyll-redirect-from
+  - jekyll-seo-tag
