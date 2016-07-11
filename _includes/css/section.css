@@ -1,0 +1,97 @@
+/* ==========================================================================
+   App Pages
+   ========================================================================== */
+
+/*
+ * Secondary menu.
+ */
+
+.stripe-secondary-menu {
+    background: #1badea;
+    border-top: 2px solid #fff;
+}
+
+.secondary-menu {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.secondary-menu .nav-link {
+    background: #1badea;
+    border-left: 2px solid #fff;
+    color: #fff;
+    display: table-cell;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.secondary-menu .nav-link:first-child {
+    border-left: none;
+}
+
+.secondary-menu .nav-link:hover {
+    background: #34b6ec;
+}
+
+.secondary-menu .nav-link.active {
+    background: #fff;
+    color: #1badea;
+    font-weight: bold;
+}
+
+
+
+
+/*
+ * Help pages
+ */
+
+.help-section {
+    margin-bottom: 3rem;
+}
+
+.help-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.help-section-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.help-subsection-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+/*
+ * Featured Stripe
+ */
+
+ .featured-stripe {
+     background: #1badea;
+     padding: 3rem 0 2rem 0;
+     text-align: center;
+ }
+
+ .featured-heading {
+     color: #fff;
+     font-size: 1.25rem;
+     font-weight: bold;
+     margin-bottom: 1.25rem;
+ }
+
+.featured-logos a:focus, .featured-logos a:hover {
+    text-decoration: none;
+}
+
+.featured-logo {
+    margin: 0 2rem;
+}

@@ -1,0 +1,24 @@
+
+/*
+ * Apps Page
+ */
+
+.apps-listing .jumbotron {
+    background: #fff;
+    color: #373737;
+}
+
+.apps-listing .appname {
+    color: #373737;
+}
+
+/* Jumbotron content link */
+
+.apps-listing .jumbotron a.link {
+    color: #373737;
+    border-bottom: 1px dotted #373737;
+}
+
+.jumbotron a.link:focus, .jumbotron a.link:hover {
+    border-bottom: 1px solid #373737;
+}
