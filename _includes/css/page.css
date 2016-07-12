@@ -3,6 +3,14 @@
  * Apps Page
  */
 
+.home-featured-stripe {
+    border-top: 2px solid #fff;
+}
+
+/*
+ * Apps Page
+ */
+
 .apps-listing .jumbotron {
     background: #fff;
     color: #373737;
@@ -19,6 +27,6 @@
     border-bottom: 1px dotted #373737;
 }
 
-.jumbotron a.link:focus, .jumbotron a.link:hover {
+.apps-listing .jumbotron a.link:focus, .apps-listing .jumbotron a.link:hover {
     border-bottom: 1px solid #373737;
 }
