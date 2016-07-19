@@ -30,3 +30,10 @@
 .apps-listing .jumbotron a.link:focus, .apps-listing .jumbotron a.link:hover {
     border-bottom: 1px solid #373737;
 }
+
+
+
+.iubenda-ibadge {
+    margin: 1.5rem 0 3rem 1.5rem;
+    transform: scale(1.5);
+}

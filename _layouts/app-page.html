@@ -1,6 +1,15 @@
 {% include common/header.html %}
 
-{% include jumbotrons/{{page.app}}.html %}
+<div id="app-page-carousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+        {% include jumbotrons/{{page.app}}.html %}
+    </div>
+    <div class="carousel-item">
+        {% include jumbotrons/east-tec.html %}
+    </div>
+  </div>
+</div>
 
 {% include templates/app-secondary-menu.html %}
 
