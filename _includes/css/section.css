@@ -9,6 +9,13 @@
 .stripe-secondary-menu {
     background: #1badea;
     border-top: 2px solid #fff;
+    padding-top: 1rem;
+}
+
+@media (min-width: 544px) {
+    .stripe-secondary-menu {
+        padding-top: 0;
+    }
 }
 
 .secondary-menu {
@@ -19,12 +26,22 @@
 
 .secondary-menu .nav-link {
     background: #1badea;
-    border-left: 2px solid #fff;
     color: #fff;
-    display: table-cell;
+    display: block;
     font-size: 1.1rem;
     padding: 1rem 0;
     text-align: center;
+}
+
+@media (min-width: 544px) {
+    .secondary-menu .nav-link {
+        border-left: 2px solid #fff;
+        display: table-cell;
+    }
+}
+
+.secondary-menu .nav-link+.nav-link {
+    margin-left: 0;
 }
 
 .secondary-menu .nav-link:first-child {
@@ -77,7 +94,7 @@
 
  .featured-stripe {
      background: #1badea;
-     padding: 3rem 0 2rem 0;
+     padding: 3rem 0 1.75rem 0;
      text-align: center;
  }
 
@@ -93,5 +110,5 @@
 }
 
 .featured-logo {
-    margin: 0 2rem;
+    margin: 0 2rem 1.25rem 2rem;
 }
