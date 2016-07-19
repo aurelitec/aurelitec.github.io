@@ -38,12 +38,30 @@ a:focus, a:hover {
 }
 
 .header-logo {
-    max-height: 140px;
+    height: 120px;
+    width: 120px;
+}
+
+@media (min-width: 544px) {
+    .header-logo {
+        height: 140px;
+        width: 140px;
+    }
 }
 
 .navbar-toggler {
     font-size: 2rem;
-    margin-top: 45px;
+    margin-top: 35px;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    outline: 5px auto #1BADEA;
+}
+
+@media (min-width: 544px) {
+    .navbar-toggler {
+        margin-top: 45px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -96,7 +114,7 @@ a:focus, a:hover {
 
 .jumbotron-content {
     margin: 0 auto;
-    max-width: 30rem;
+    max-width: 32rem;
 }
 
 @media (min-width: 992px) {
@@ -107,15 +125,28 @@ a:focus, a:hover {
 }
 
 .jumbotron-heading {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 544px) {
+    .jumbotron-heading {
+        font-size: 1.75rem;
+    }
 }
 
 .appname {
     color: #fff;
+    display: block;
     font-family: 'Dosis', sans-serif;
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 200;
+}
+
+@media (min-width: 544px) {
+    .appname {
+        display: inline-block;
+        font-size: 4.5rem;
+    }
 }
 
 .appname:focus, .appname:hover {

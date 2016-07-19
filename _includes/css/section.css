@@ -9,12 +9,12 @@
 .stripe-secondary-menu {
     background: #1badea;
     border-top: 2px solid #fff;
-    padding-top: 1rem;
+    padding: 1rem 0;
 }
 
 @media (min-width: 544px) {
     .stripe-secondary-menu {
-        padding-top: 0;
+        padding: 0;
     }
 }
 
