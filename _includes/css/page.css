@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .carousel .jumbotron-content {
-    min-height: 22.5rem;
+    min-height: 22rem;
 }
 
 @media (min-width: 544px) {

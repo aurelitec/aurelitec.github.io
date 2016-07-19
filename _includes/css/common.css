@@ -46,7 +46,6 @@
     margin-bottom: 1rem;
 }
 
-
 /*
  * Links
  */
@@ -56,49 +55,47 @@
     text-decoration: none;
 }
 
-
 /*
 * Buttons
 */
 
 .btn-primary {
-  background: linear-gradient(to top, #757676 0%,#222222 0%,#4c4c4c 69%,#757676 98%) #494a4e;
-  border: 2px solid #fff;
-  font-size: 1.4rem;
-  padding: 0.25rem 1rem;
+    background: linear-gradient(to top, #757676 0%,#222222 0%,#4c4c4c 69%,#757676 98%) #494a4e;
+    border: 2px solid #fff;
+    font-size: 1.4rem;
+    padding: 0.25rem 1rem;
 }
 
-.btn-primary:focus, .btn-primary:hover {
-  background: #494a4e;
-  border-color: #fff;
+.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:active:hover, .btn-primary:active:focus {
+    background: #494a4e;
+    border-color: #fff;
 }
-
 
 /*
  * Lists
  */
 
- .list-group {
-     margin-bottom: 1rem;
- }
+.list-group {
+    margin-bottom: 1rem;
+}
 
- .list-group-item {
-     border: none;
-     border-top: 1px solid #eee;
- }
+.list-group-item {
+    border: none;
+    border-top: 1px solid #eee;
+}
 
- .list-group-item:first-child, .list-group-item:last-child {
-     border-radius: 0;
- }
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0;
+}
 
 
 /*
  * Structure
  */
 
- .content-item {
-     margin-bottom: 2rem;
- }
+.content-item {
+    margin-bottom: 2rem;
+}
 
 .square-middle {
     height: 140px;
