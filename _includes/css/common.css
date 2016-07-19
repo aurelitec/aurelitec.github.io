@@ -27,7 +27,7 @@
     width: 120px;
 }
 
-@media (min-width: 544px) {
+@media (min-width: 992px) {
     .section-heading {
         height: 140px;
         line-height: 140px;

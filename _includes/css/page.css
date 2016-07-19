@@ -1,15 +1,31 @@
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
 
-/*
- * Apps Page
- */
+.carousel .jumbotron-content {
+    min-height: 22.5rem;
+}
+
+@media (min-width: 544px) {
+    .carousel .jumbotron-content {
+        min-height: 20rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel .jumbotron-content {
+        min-height: 0;
+    }
+}
 
 .home-featured-stripe {
     border-top: 2px solid #fff;
 }
 
-/*
- * Apps Page
- */
+
+/* ==========================================================================
+   Apps Page
+   ========================================================================== */
 
 .apps-listing .jumbotron {
     background: #fff;
@@ -32,6 +48,9 @@
 }
 
 
+/* ==========================================================================
+   Privacy Policy
+   ========================================================================== */
 
 .iubenda-ibadge {
     margin: 1.5rem 0 3rem 1.5rem;

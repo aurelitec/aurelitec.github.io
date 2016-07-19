@@ -29,8 +29,15 @@ a:focus, a:hover {
 
  .navbar {
      background: #fff;
-     border-bottom: 2px solid #fff;
+     margin-bottom: 2px;
+     margin-top: 2px;
      padding: 0;
+}
+
+@media (min-width: 544px) {
+    .navbar {
+        margin-top: 0;
+    }
 }
 
 .navbar-brand {
@@ -42,7 +49,7 @@ a:focus, a:hover {
     width: 120px;
 }
 
-@media (min-width: 544px) {
+@media (min-width: 992px) {
     .header-logo {
         height: 140px;
         width: 140px;
@@ -55,12 +62,22 @@ a:focus, a:hover {
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover {
-    outline: 5px auto #1BADEA;
+    outline: 2px solid #1BADEA;
 }
 
 @media (min-width: 544px) {
     .navbar-toggler {
         margin-top: 45px;
+    }
+}
+
+.navbar-panel {
+    margin-top: 2px;
+}
+
+@media (min-width: 768px) {
+    .navbar-panel {
+        margin-top: 0;
     }
 }
 
@@ -72,17 +89,39 @@ a:focus, a:hover {
 
 .navbar .nav-link {
     color: #000;
-    display: table-cell;
+    display: inline-block;;
     font-size: 1.15rem;
     font-weight: bold;
-    height: 140px;
+    line-height: 120px;
+    height: 120px;
     text-align: center;
-    vertical-align: middle;
-    width: 130px;
+    width: 120px;
+}
+
+/*
+@media (min-width: 544px) {
+    .navbar .nav-link {
+        display: table-cell;
+        height: 140px;
+        text-align: center;
+        vertical-align: middle;
+        width: 130px;
+    }
+}
+*/
+
+@media (min-width: 544px) {
+    .navbar .nav-link {
+        height: 120px;
+        line-height: 120px;
+        width: 120px;
+    }
 }
 
 @media (min-width: 992px) {
     .navbar .nav-link {
+        height: 140px;
+        line-height: 140px;
         width: 140px;
     }
 }
