@@ -14,6 +14,10 @@
     <meta name="theme-color" content="#1BADEA">
 
     {% seo %}
+
+    {% if jekyll.environment == 'production' %}
+    {% include common/analytics.html %}
+    {% endif %}
 </head>
 <body>
 
