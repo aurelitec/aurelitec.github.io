@@ -21,10 +21,4 @@ description : We are always happy to hear from you. Please send your feedback, c
 {% endcapture %}
 {% include templates/contentsection.html heading="Email" %}
 
-{% capture thecontent %}
-    <p>You can learn more about the Aurelitec apps by reading these articles:</p>
-    <ul class="nav">
-        <li class="nav-item"><a href="/articles/diy-pixel-fix/">DIY Pixel Fix: Fix Dead, Stuck Or Hot Pixels Hassle Free</a></li>
-    </ul>
-{% endcapture %}
-{% include templates/contentsection.html heading="Articles" %}
+{% include various/article-list.html %}
