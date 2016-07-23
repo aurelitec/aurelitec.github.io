@@ -1,9 +1,11 @@
 {% capture thecontent %}
+    <p>Url: {{ site.url }}</p>
+    <p>Base url: {{ site.baseurl }}</p>
     <p>You can learn more about the free Aurelitec apps by reading these articles:</p>
     <ul class="list-group">
         <li class="list-group-item">
             <span class="label label-default label-pill pull-xs-right">Colortypist</span>
-            <a href="/articles/color-desktop-wallpapers-fingertips/">Color Desktop Wallpapers At Your Fingertips</a>
+            <a href="{{site.url}}/articles/color-desktop-wallpapers-fingertips/">Color Desktop Wallpapers At Your Fingertips</a>
         </li>
         <li class="list-group-item">
             <span class="label label-default label-pill pull-xs-right">PixelHealer</span>
