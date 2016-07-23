@@ -5,6 +5,9 @@ author      : aurelitec
 twitter:
   username  : aurelitec
 
+github:
+  url: http://localhost:4000
+
 baseurl: "http://www.aurelitec.com"
 
 collections:
