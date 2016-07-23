@@ -151,12 +151,17 @@ a:focus, a:hover {
 
 .jumbotron-heading {
     font-size: 1.25rem;
+    line-height: 1.1;
 }
 
 @media (min-width: 544px) {
     .jumbotron-heading {
         font-size: 1.75rem;
     }
+}
+
+p.jumbotron-heading {
+    margin-bottom: .5rem;
 }
 
 .appname {

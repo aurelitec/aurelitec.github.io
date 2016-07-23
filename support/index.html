@@ -18,6 +18,13 @@ description : We are always happy to hear from you. Please send your feedback, c
     <p>Email us with as much detail as you can so we can give you the best help possible.</p>
 
     <a target="_blank" class="btn btn-primary" href="http://www.google.com/recaptcha/mailhide/d?k=01PO-pEhpelNojf9aqrwjL9g==&c=U0CwpA-8dYjPTVPGphEFuW5ME7nOHvva85cerEMiGOk=" role="button">Send Email</a>
-
 {% endcapture %}
 {% include templates/contentsection.html heading="Email" %}
+
+{% capture thecontent %}
+    <p>You can learn more about the Aurelitec apps by reading these articles:</p>
+    <ul class="nav">
+        <li class="nav-item"><a href="/articles/diy-pixel-fix/">DIY Pixel Fix: Fix Dead, Stuck Or Hot Pixels Hassle Free</a></li>
+    </ul>
+{% endcapture %}
+{% include templates/contentsection.html heading="Articles" %}
