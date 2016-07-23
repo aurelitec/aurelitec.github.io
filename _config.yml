@@ -5,6 +5,8 @@ author      : aurelitec
 twitter:
   username  : aurelitec
 
+baseurl: "http://www.aurelitec.com/"
+
 collections:
   - reviews
   - testimonials
