@@ -1,0 +1,14 @@
+---
+layout      : info-page
+heading     : Page Not Found
+permalink   : /404.html
+
+title       : Page Not Found
+description : Page Not Found
+---
+
+{% capture thecontent %}
+    <p>The page you are looking for could not be found.</p>
+    <p>Try the <a href="{{ site.github.url }}/">Home Page</a>.</p>
+{% endcapture %}
+{% include templates/contentsection.html heading="404" %}
