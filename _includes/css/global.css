@@ -270,14 +270,22 @@ p.jumbotron-heading {
    width: 24px;
 }
 
-.social-twitter {
-   background: #55ACEE;
-}
-
 .social-github {
    background: #181717;
 }
 
 .social-pocket {
    background: #EF3F56;
+}
+
+.social-tumblr {
+   background: #36465D;
+}
+
+.social-twitter {
+   background: #55ACEE;
+}
+
+.social-wordpress {
+   background: #21759B;
 }
