@@ -63,6 +63,7 @@
     background: linear-gradient(to top, #757676 0%,#222222 0%,#4c4c4c 69%,#757676 98%) #494a4e;
     border: 2px solid #fff;
     font-size: 1.4rem;
+    line-height: 1.5;
     padding: 0.25rem 1rem;
 }
 
