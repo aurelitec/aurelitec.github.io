@@ -190,8 +190,11 @@ p.jumbotron-heading {
 
 /* Jumbotron content link */
 
-.jumbotron a.link {
+.jumbotron a {
     color: #fff;
+}
+
+.jumbotron a.link {
     border-bottom: 1px dotted #fff;
 }
 
