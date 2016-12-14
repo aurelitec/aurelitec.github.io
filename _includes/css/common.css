@@ -55,6 +55,12 @@
     text-decoration: none;
 }
 
+.download-link {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    padding: 0.25rem 0;
+}
+
 /*
 * Buttons
 */
