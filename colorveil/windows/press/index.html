@@ -15,11 +15,12 @@ description : View ColorVeil's full version history and see a comprehensive list
     <h3 class="item-heading">PAD Data Sheet</h3>
     <p>The Portable Application Description file contains product descriptions, download links, version and file size information, affiliate links, and more.</p>
     <ul class="nav nav-inline mb-2">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link download-link" href="http://wiki.appvisor.org/ColorVeil" target="_blank">View PAD Summary</a>
-        </li>
+        </li> -->
         <li class="nav-item">
-            <a class="nav-link download-link" href="http://repository.appvisor.com/info/app-4e0056aec80f/ColorVeil_pad.xml" target="_blank">View PAD XML File</a>
+            <!-- <a class="nav-link download-link" href="http://repository.appvisor.com/info/app-4e0056aec80f/ColorVeil_pad.xml" target="_blank">View PAD XML File</a> -->
+            <a class="nav-link download-link" href="http://download.aurelitec.com/colorveil/windows/pad/ColorVeil_pad.xml" target="_blank">View PAD XML File</a>
         </li>
     </ul>
 {% endcapture %}
@@ -27,7 +28,7 @@ description : View ColorVeil's full version history and see a comprehensive list
 
 {% capture thecontent %}
     <div class="row">
-        <div class="col-sm-6 col-lg-4">
+        <div class="col-sm-6 col-lg-4 mb-2">
             <a href="/img/apps/colorveil/windows/press/icon/colorveil-windows-icon-1024.png" target="_blank">
                 <img class="img-fluid" src="/img/apps/colorveil/windows/press/icon/colorveil-windows-icon-128.png" alt="ColorVeil Icon">
             </a>
@@ -93,8 +94,22 @@ description : View ColorVeil's full version history and see a comprehensive list
 {% include templates/contentsection.html heading="Icon" %}
 
 {% capture thecontent %}
-    <a href="/img/apps/colorveil/windows/press/screenshots/colorveil-main-screenshot.png" download="">
-        <img class="img-fluid screenshot" src="/img/apps/colorveil/windows/press/screenshots/colorveil-main-screenshot-thumb.png" alt="ColorVeil Main Screenshot">
-    </a>
+    <div class="row">
+        <div class="col-sm-6 col-lg-4 mb-2">
+            <a href="/img/apps/colorveil/windows/press/screenshots/colorveil-screenshot-main.png" download="">
+                <img class="img-fluid screenshot" src="/img/apps/colorveil/windows/press/screenshots/colorveil-screenshot-main-thumb.png" alt="ColorVeil Main Screenshot">
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-2">
+            <a href="/img/apps/colorveil/windows/press/screenshots/colorveil-screenshot-settings-general.png" download="">
+                <img class="img-fluid screenshot" src="/img/apps/colorveil/windows/press/screenshots/colorveil-screenshot-settings-general-thumb.png" alt="ColorVeil General Settings Screenshot">
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-2">
+            <a href="/img/apps/colorveil/windows/press/screenshots/colorveil-screenshot-blue.png" download="">
+                <img class="img-fluid screenshot" src="/img/apps/colorveil/windows/press/screenshots/colorveil-screenshot-blue-thumb.png" alt="ColorVeil Blue Filter Screenshot">
+            </a>
+        </div>
+    </div>
 {% endcapture %}
 {% include templates/contentsection.html heading="Screenshots" %}
