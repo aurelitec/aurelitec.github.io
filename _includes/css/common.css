@@ -109,3 +109,8 @@
     display: table-cell;
     vertical-align: middle;
 }
+
+
+.inline-logo {
+    width: 200px;
+}
