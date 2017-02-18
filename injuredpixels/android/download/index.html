@@ -10,23 +10,27 @@ description : Install and run InjuredPixels on any smartphone or tablet with And
 ---
 
 {% capture thecontent %}
-    <p class="square-middle">
-        InjuredPixels is free for use in any environment, including but not necessarily limited to: personal, academic,
-        commercial, government, business, non-profit, and for-profit. Before using InjuredPixels, you must accept its
-        <a href="{{ site.github.url }}/injuredpixels/android/license/">License Agreement</a>.
-    </p>
-{% endcapture %}
-{% include templates/contentsection.html heading="License" %}
-
-{% capture thecontent %}
-<h3 class="item-heading">Install InjuredPixels 1.0</h3>
+<h3 class="item-heading">Install InjuredPixels</h3>
 <p>
-    InjuredPixels runs on all Android versions starting with version 4.4. It requires no Internet and no extra
+    <strong>Version 1.0. Only 37KB.</strong> InjuredPixels runs on all Android versions starting with version 4.4. It requires no Internet and no extra
     permissions whatsoever.
 </p>
 <p>
     <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.aurelitec.injuredpixels" role="button" target="_blank">Get it on Google Play</a>
-    <span class="tag tag-default ml-1">Only 37KB</span>
 </p>
 {% endcapture %}
 {% include templates/contentsection.html heading="Install" %}
+
+{% capture thecontent %}
+    <p>
+        InjuredPixels for Android is free and open source, and licensed under the <a href="{{ site.github.url }}/injuredpixels/android/license/">Apache License
+        Version 2.0</a>. The source code is available <a href="https://github.com/aurelitec/injuredpixels-android" target="_blank">on GitHub</a>. We look
+        forward to your contributions!
+    </p>
+    <p>
+        <a href="https://github.com/aurelitec/injuredpixels-android" target="_blank">
+            <img class="inline-logo" src="/img/third/social/github/github-logo.png" alt="GitHub" />
+        </a>
+    </p>
+{% endcapture %}
+{% include templates/contentsection.html heading="License" %}
