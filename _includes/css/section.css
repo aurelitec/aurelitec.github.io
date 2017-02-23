@@ -7,25 +7,37 @@
  * Featured Stripe
  */
 
- .featured-stripe {
+ .aur-featured-stripe {
      background: #1badea;
-     padding: 3rem 0 1.75rem 0;
+     padding: 3rem 0 1rem 0;
      text-align: center;
  }
 
- .featured-heading {
+ .aur-featured-heading {
      color: #fff;
      font-size: 1.25rem;
      font-weight: bold;
-     margin-bottom: 1.25rem;
+     margin-bottom: 2rem;
  }
 
-.featured-logos a:focus, .featured-logos a:hover {
-    text-decoration: none;
+ @media (min-width: 1200px) {
+     .aur-featured-heading {
+         margin-bottom: 1.25rem;
+     }
 }
 
-.featured-logo {
-    margin: 0 2rem 1.25rem 2rem;
+.aur-featured-logo {
+    display: block;
+    margin: 0 auto 2rem auto;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .aur-featured-logo {
+        display: inline;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 /*
@@ -46,53 +58,45 @@
  * Secondary menu.
  */
 
-.stripe-secondary-menu {
+.aur-secondary-menu-stripe {
     background: #1badea;
     border-top: 2px solid #fff;
     padding: 1rem 0;
 }
 
-@media (min-width: 544px) {
-    .stripe-secondary-menu {
+@media (min-width: 576px) {
+    .aur-secondary-menu-stripe {
         padding: 0;
     }
 }
 
-.secondary-menu {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-}
-
-.secondary-menu .nav-link {
+.aur-secondary-menu .nav-link {
     background: #1badea;
     color: #fff;
-    display: block;
     font-size: 1.1rem;
     padding: 1rem 0;
     text-align: center;
 }
 
-@media (min-width: 544px) {
-    .secondary-menu .nav-link {
+@media (min-width: 576px) {
+    .aur-secondary-menu .nav-link {
         border-left: 2px solid #fff;
-        display: table-cell;
+    }
+
+    /*.aur-secondary-menu .col-sm:first-child .nav-link {
+        border-left: none;
+    }*/
+
+    .aur-secondary-menu .col-sm:last-child .nav-link {
+        border-right: 2px solid #fff;
     }
 }
 
-.secondary-menu .nav-link+.nav-link {
-    margin-left: 0;
-}
-
-.secondary-menu .nav-link:first-child {
-    border-left: none;
-}
-
-.secondary-menu .nav-link:hover {
+.aur-secondary-menu .nav-link:hover {
     background: #34b6ec;
 }
 
-.secondary-menu .nav-link.active {
+.aur-secondary-menu .nav-link.active {
     background: #fff;
     color: #1badea;
     font-weight: bold;
@@ -100,36 +104,18 @@
 
 
 /* ==========================================================================
-   Help Pages
+   History Pages
    ========================================================================== */
 
-.help-section {
-    margin-bottom: 3rem;
+.aur-history-list li {
+    margin-bottom: 0.5rem;
 }
 
-.help-heading {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 3rem;
+.aur-history-list .fa-li {
+    color: #1badea;
 }
 
-.help-section-heading {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-}
-
-.help-subsection-heading {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-
-/* ==========================================================================
-   Articles
-   ========================================================================== */
-
-.article {
-    margin-bottom: 3rem;
+.aur-history-list time {
+    color: #636c72;
+    font-size: 80%;
 }

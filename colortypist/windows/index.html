@@ -10,71 +10,50 @@ description   : Type a color name or a web color code, and see the color fill yo
 image         : /img/apps/colortypist/colortypist-jumbotron-shot.png
 ---
 
-{% capture thecontent %}
+<section class="aur-content-group text-center">
     <div class="row">
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">View Any Web Color</h3>
-            <p>Type or paste the name or HTML code of any web color, and see it fill your entire screen, in real-time, while you type.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">Type In Any Format</h3>
-            <p>Enter color names, HTML codes, RGB triplets or integer values. And easily convert between any of these formats.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">Wallpaper Changer</h3>
-            <p>Easily set your favorite tint as your Desktop Wallpaper. You may get a more modern looking Desktop, and a faster PC.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h4 class="item-heading">Copy And Reuse</h4>
-            <p>Copy and reuse html colors in external apps, for various purposes. Such as generating web color schemes, or palettes.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h4 class="item-heading">Save As Images</h4>
-            <p>Generate and save images of any size, filled with the color of your choice. For anonymous profile images, or backgrounds.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h4 class="item-heading">Save As Portable Files</h4>
-            <p>Save any color in a tiny HTML file. Then open the file and view the color in any browser, on any PC, tablet or smartphone.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h4 class="item-heading">Paste From Anywhere</h4>
-            <p>Paste colors into Colortypist. From any external site or app, such as a web color picker, or a HTML color wheel.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h4 class="item-heading">Easy To Use</h4>
-            <p>Colortypist has a clean and easy to use interface. Type colors in the large edit box, and use the menus for the main functions.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h4 class="item-heading">Useful And Fun</h4>
-            <p>Learn web color names by trial and error. Or have fun by typing weird color names, or words that are also color codes.</p>
-        </div>
-    </div>
-{% endcapture %}
-{% include templates/contentsection.html heading="Features" %}
+        {% include templates/feature.html icon="fa-tint" heading="View Any Color" text="Type or paste the name or HTML code of any web color, and see
+        it fill your entire screen, in real-time, while you type." %}
 
-{% capture thecontent %}
-    <div class="row">
-        <div class="col-lg-4 content-item">
-            <h3 class="quote-heading">
-                <a class="heading-link" href="http://betanews.com/2015/11/20/colortypist-is-a-full-screen-color-viewer/" target="_blank">BetaNews</a>
-            </h3>
-            <p><q>Colortypist is a smart graphic design addon, well worth its 40KB download. Go grab a copy now.</q></p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="quote-heading">
-                <a class="heading-link" href="http://www.rockybytes.com/colortypist" target="_blank">Rocky Bytes</a>
-            </h3>
-            <p><q>Just really like discovering different colors? Colortypist is the application for you.</q> (Five Stars – It Rocks!)</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="quote-heading">
-                <a class="heading-link" href="http://www.ghacks.net/2011/09/07/colortypist-realtime-desktop-wallpaper-color-selector/" target="_blank">Ghacks</a>
-            </h3>
-            <p><q>Colortypist, Realtime Desktop Wallpaper Color Selector: a better way of experimenting with background colors.</q></p>
-        </div>
+        {% include templates/feature.html icon="fa-hashtag" heading="Type In Any Format" text="Enter color names, HTML codes, RGB triplets or integer
+        values. And easily convert between any of these formats." %}
+
+        {% include templates/feature.html icon="fa-image" heading="Wallpaper Changer" text="Easily set your favorite tint as your Desktop Wallpaper. You
+        may get a more modern looking Desktop, and a faster PC." %}
+
+        {% include templates/feature.html icon="fa-copy" heading="Copy And Reuse" text="Copy and reuse html colors in external apps, for various
+        purposes. Such as generating web color schemes, or palettes." %}
+
+        {% include templates/feature.html icon="fa-file-image-o" heading="Save As Images" text="Generate and save images of any size, filled with the color of
+        your choice. For anonymous profile images, or backgrounds." %}
+
+        {% include templates/feature.html icon="fa-file-text-o" heading="Save As Portable Files" text="Save any color in a tiny HTML file. Then open the file
+        and view the color in any browser, on any PC, tablet or smartphone." %}
+
+        {% include templates/feature.html icon="fa-paste" heading="Paste From Anywhere" text="Paste colors into Colortypist. From any external site or
+        app, such as a web color picker, or a HTML color wheel." %}
+
+        {% include templates/feature.html icon="fa-window-maximize" heading="Simple Interface" text="Colortypist has a clean and easy to use interface. Type
+        colors in the large edit box, and use the menus for the main functions." %}
+
+        {% include templates/feature.html icon="fa-graduation-cap" heading="Useful And Fun" text="Learn web color names by trial and error. Or have fun by
+        typing weird color names, or words that are also color codes." %}
     </div>
-{% endcapture %}
-{% include templates/contentsection.html heading="Reviews" %}
+</section>
+
+<section class="aur-content-group text-center">
+    <h2 class="aur-home-heading">Selected Reviews</h2>
+    <div class="row">
+        {% include templates/selected-review.html link="http://betanews.com/2015/11/20/colortypist-is-a-full-screen-color-viewer/" source="BetaNews"
+        quote="Colortypist is a smart graphic design addon, well worth its 40KB download. Go grab a copy now." %}
+
+        {% include templates/selected-review.html link="http://www.rockybytes.com/colortypist" source="Rocky Bytes"
+        quote="Just really like discovering different colors? Colortypist is the application for you. (Five Stars – It Rocks!)" %}
+
+        {% include templates/selected-review.html link="http://www.ghacks.net/2011/09/07/colortypist-realtime-desktop-wallpaper-color-selector/" source="Ghacks"
+        quote="Colortypist, Realtime Desktop Wallpaper Color Selector: a better way of experimenting with background colors." %}
+    </div>
+</section>
 
 {% capture thecontent %}
     <blockquote class="blockquote">

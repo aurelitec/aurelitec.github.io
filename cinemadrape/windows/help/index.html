@@ -9,7 +9,9 @@ description : Learn how to use CinemaDrape to improve your concentration and foc
 ---
 
 {% capture thecontent %}
-    <div class="help-section">
+
+    <section class="aur-content-group">
+        <h2 class="aur-content-heading">Introduction</h2>
         <p>
             CinemaDrape helps you focus on your current task on screen, by instantly blanking or dimming the other less
             important areas in a web page or in the background windows. CinemaDrape works anywhere and can help you write
@@ -25,63 +27,66 @@ description : Learn how to use CinemaDrape to improve your concentration and foc
             as many focus areas as you need. And you can easily move or resize the focus areas using the mouse or arrow
             keys, save them for future reuse, pause or resume the drape, or change its color and opacity.
         </p>
-    </div>
-{% endcapture %}
-{% include templates/contentsection.html heading="Introduction" %}
+    </section>
 
-{% capture thecontent %}
-    <div class="help-section">
-        <p>Click the right mouse button, long tap, or press Escape to open the main CinemaDrape menu.</p>
-    </div>
-    <div class="help-section">
-        <h3 class="help-section-heading">Drape Menu Items</h3>
-        <h4 class="help-subsection-heading">Hide (Pause)</h4>
-        <p> Use this menu item to pause CinemaDrape. When CinemaDrape is paused, the drape is hidden, and your entire screen is revealed as usual. To restore CinemaDrape, click the CinemaDrape icon from the Windows taskbar notification area.</p>
-        <h4 class="help-subsection-heading">Background Color</h4>
-        <p>Use this menu item and its sub-items to change the drape color. You can select a color from a Color Picker dialog box, enter its name or code, or try a random color.</p>
-        <h4 class="help-subsection-heading">Opacity</h4>
-        <p>Use this menu item to change the opacity of the drape.</p>
-        <h4 class="help-subsection-heading">Reset to Black</h4>
-        <p>Use this menu item to reset the drape color to Black, and its opacity to 100% (fully opaque).</p>
-    </div>
-    <div class="help-section">
-        <h3 class="help-section-heading">Focus Areas Menu Items</h3>
-        <h4 class="help-subsection-heading">Area Under Cursor</h4>
-        <p>Use this menu item to try to automatically detect the area under the mouse cursor. This is an experimental feature. For example, you can use this feature to automatically detect a YouTube video area in Microsoft Internet Explorer or Mozilla Firefox.</p>
-        <h4 class="help-subsection-heading">Window Under Cursor</h4>
-        <p>Use this menu item to try to automatically detect the window under the mouse cursor. This is an experimental feature. For example, you can use this feature to automatically detect an entire, non-maximized browser window.</p>
-        <h4 class="help-subsection-heading">New Random Area</h4>
-        <p>Use this menu item to create a new, random focus area.</p>
-        <h4 class="help-subsection-heading">Delete All</h4>
-        <p>Use this menu item to delete all focus areas. (To delete a single focus area, press the Delete key while its border is visible.)</p>
-    </div>
-    <div class="help-section">
-        <h3 class="help-section-heading">Extras Menu Items</h3>
-        <h4 class="help-subsection-heading">Load Layout</h4>
-        <p>
-            Use this menu item to load the focus areas, the drape color and opacity and other settings from a
-            previously saved CinemaDrape layout file.</p>
-        <h4 class="help-subsection-heading">Save Layout</h4>
-        <p>
-          Use this menu item to save the location and size of all focus areas, the drape color and opacity and other
-          settings to a CinemaDrape layout file. This option allows you to save separate CinemaDrape layouts for each
-          of your activities that require a distraction free environment.
-        </p>
-        <h4 class="help-subsection-heading">Settings</h4>
-        <p>
-          Use this menu item to open the Settings dialog box and change the keyboard shortcut for pausing and resuming
-          CinemaDrape, and other various app settings.
-        </p>
-        <h4 class="help-subsection-heading">About</h4>
-        <p>
-          Use the sub-items of this menu item to open the Online Help, find out the current version of the app, and
-          visit the app pages on the Internet.
-        </p>
-        <h4 class="help-subsection-heading">Exit</h4>
-        <p>
-          Use this menu item to close CinemaDrape. The focus areas, the drape color and opacity, and other settings
-          will be automatically restored the next time you run CinemaDrape.
-        </p>
-    </div>
+    <section class="aur-content-group">
+        <h2 class="aur-content-heading">The Menu</h2>
+
+        <div class="aur-content-subgroup">
+            <p>Click the right mouse button, long tap, or press Escape to open the main CinemaDrape menu.</p>
+        </div>
+
+        <div class="aur-content-subgroup">
+            <h3 class="aur-content-subheading">Drape Menu Items</h3>
+            <h4 class="aur-content-subsubheading">Hide (Pause)</h4>
+            <p> Use this menu item to pause CinemaDrape. When CinemaDrape is paused, the drape is hidden, and your entire screen is revealed as usual. To restore CinemaDrape, click the CinemaDrape icon from the Windows taskbar notification area.</p>
+            <h4 class="aur-content-subsubheading">Background Color</h4>
+            <p>Use this menu item and its sub-items to change the drape color. You can select a color from a Color Picker dialog box, enter its name or code, or try a random color.</p>
+            <h4 class="aur-content-subsubheading">Opacity</h4>
+            <p>Use this menu item to change the opacity of the drape.</p>
+            <h4 class="aur-content-subsubheading">Reset to Black</h4>
+            <p>Use this menu item to reset the drape color to Black, and its opacity to 100% (fully opaque).</p>
+        </div>
+        <div class="aur-content-subgroup">
+            <h3 class="aur-content-subheading">Focus Areas Menu Items</h3>
+            <h4 class="aur-content-subsubheading">Area Under Cursor</h4>
+            <p>Use this menu item to try to automatically detect the area under the mouse cursor. This is an experimental feature. For example, you can use this feature to automatically detect a YouTube video area in Microsoft Internet Explorer or Mozilla Firefox.</p>
+            <h4 class="aur-content-subsubheading">Window Under Cursor</h4>
+            <p>Use this menu item to try to automatically detect the window under the mouse cursor. This is an experimental feature. For example, you can use this feature to automatically detect an entire, non-maximized browser window.</p>
+            <h4 class="aur-content-subsubheading">New Random Area</h4>
+            <p>Use this menu item to create a new, random focus area.</p>
+            <h4 class="aur-content-subsubheading">Delete All</h4>
+            <p>Use this menu item to delete all focus areas. (To delete a single focus area, press the Delete key while its border is visible.)</p>
+        </div>
+        <div class="aur-content-subgroup">
+            <h3 class="aur-content-subheading">Extras Menu Items</h3>
+            <h4 class="aur-content-subsubheading">Load Layout</h4>
+            <p>
+                Use this menu item to load the focus areas, the drape color and opacity and other settings from a
+                previously saved CinemaDrape layout file.</p>
+            <h4 class="aur-content-subsubheading">Save Layout</h4>
+            <p>
+              Use this menu item to save the location and size of all focus areas, the drape color and opacity and other
+              settings to a CinemaDrape layout file. This option allows you to save separate CinemaDrape layouts for each
+              of your activities that require a distraction free environment.
+            </p>
+            <h4 class="aur-content-subsubheading">Settings</h4>
+            <p>
+              Use this menu item to open the Settings dialog box and change the keyboard shortcut for pausing and resuming
+              CinemaDrape, and other various app settings.
+            </p>
+            <h4 class="aur-content-subsubheading">About</h4>
+            <p>
+              Use the sub-items of this menu item to open the Online Help, find out the current version of the app, and
+              visit the app pages on the Internet.
+            </p>
+            <h4 class="aur-content-subsubheading">Exit</h4>
+            <p>
+              Use this menu item to close CinemaDrape. The focus areas, the drape color and opacity, and other settings
+              will be automatically restored the next time you run CinemaDrape.
+            </p>
+        </div>
+    </section>
+
 {% endcapture %}
-{% include templates/contentsection.html heading="The Menu" %}
+{% include templates/nosidebar-content.html %}

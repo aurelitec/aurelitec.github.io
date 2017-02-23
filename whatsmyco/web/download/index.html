@@ -10,19 +10,24 @@ title         : WhatsMyCo - Run In Your Browser
 description   : Run WhatsMyCo in any modern browser, and on any device - on PCs, notebooks, tablets, or smartphones. No install and no plugins required.
 ---
 
-{% capture thecontent %}
-    <p class="square-middle">
-        WhatsMyCo is free for use in any environment, including but not necessarily limited to: personal, academic,
-        commercial, government, business, non-profit, and for-profit. Before using WhatsMyCo, you must accept its
-        <a href="{{ site.github.url }}/whatsmyco/web/license/">License Agreement</a>.
-    </p>
-{% endcapture %}
-{% include templates/contentsection.html heading="License" %}
-
-{% capture thecontent %}
-    <p>WhatsMyCo works in any modern browser, and on any device: PCs, notebooks, tablets, or smartphones. No install and no plugins required.</p>
-    <p>
-        <a class="btn btn-primary" href="http://whatsmyco.aurelitec.com/" target="_blank" role="button">Run In Your Browser</a>
-    </p>
-{% endcapture %}
-{% include templates/contentsection.html heading="Run" %}
+<div class="row">
+    <div class="col-lg-8">
+        <div class="aur-content-group">
+            <h2 class="aur-content-heading">Run WhatsMyCo</h2>
+            <p>WhatsMyCo works in any modern browser, and on any device: PCs, notebooks, tablets, or smartphones. No install and no plugins required.</p>
+            <p>
+                <a class="btn btn-primary" href="http://whatsmyco.aurelitec.com/" target="_blank" role="button">Run In Your Browser</a>
+            </p>
+        </div>
+        <div class="aur-content-group">
+            <h2 class="aur-content-heading">License Agreement</h2>
+            <p>
+                WhatsMyCo is free for use in any environment, including but not necessarily limited to: personal, academic, commercial, government, business,
+                non-profit, and for-profit. Before using WhatsMyCo, you must accept its <a href="{{ site.github.url }}/whatsmyco/web/license/">License
+                Agreement</a>.
+            </p>
+        </div>
+    </div>
+    <div class="col-lg-4">
+    </div>
+</div>

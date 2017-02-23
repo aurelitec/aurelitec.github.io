@@ -9,94 +9,61 @@ description : View full version history for InjuredPixels for Windows, and see a
 ---
 
 {% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">
-        InjuredPixels for Windows has gone Open Source on GitHub
-    </li>
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Save and restore colors and settings
-    </li>
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added a Touch Mode to let the user gently rub any touchscreen area while testing
-    </li>
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added support for high-resolution displays
-    </li>
-    <li class="list-group-item">
-        Improved interface
-    </li>
-    <li class="list-group-item">
-        <time class="text-muted"><small>February 5, 2017</small></time>
-    </li>
-</ul>
-{% endcapture %}
-{% include templates/contentsection.html heading="Version 4.0" %}
 
-{% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">
-        Improved native support for Windows 10
-    </li>
-    <li class="list-group-item">
-        <time class="text-muted"><small>November 18, 2015</small></time>
-    </li>
-</ul>
-{% endcapture %}
-{% include templates/contentsection.html heading="Version 3.5" %}
+    <h2 class="aur-page-heading">InjuredPixels For Windows Version History</h2>
 
-{% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">
-        Improved modern interface
-    </li>
-    <li class="list-group-item">
-        Improved native support for Windows 8
-    </li>
-    <li class="list-group-item">
-        <time class="text-muted"><small>October 9, 2012</small></time>
-    </li>
-</ul>
-{% endcapture %}
-{% include templates/contentsection.html heading="Version 3.0" %}
+    <section class="aur-content-group-hr">
+        <h3 class="aur-content-subheading">Version 4.0</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-check" text="InjuredPixels for Windows has gone Open Source on GitHub" %}
+            {% include templates/history-item.html icon="fa-plus-square" text="Save and restore colors and settings" %}
+            {% include templates/history-item.html icon="fa-plus-square" text="Added a Touch Mode to let the user gently rub any touchscreen area while testing" %}
+            {% include templates/history-item.html icon="fa-plus-square" text="Added support for high-resolution displays" %}
+            {% include templates/history-item.html icon="fa-check" text="Improved interface" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>February 5, 2017</time>" %}
+        </ul>
+    </section>
 
-{% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added multi-monitor support to check any or all connected monitors/displays for dead pixels
-    </li>
-    <li class="list-group-item">
-        <time class="text-muted"><small>October 12, 2010</small></time>
-    </li>
-</ul>
-{% endcapture %}
-{% include templates/contentsection.html heading="Version 2.1" %}
+    <section class="aur-content-group-hr">
+        <h3 class="aur-content-subheading">Version 3.5</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-check" text="Improved native support for Windows 10" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>November 18, 2015</time>" %}
+        </ul>
+    </section>
 
-{% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added a new edition of the program in the form of a HTML Application (HTA)
-    </li>
-    <li class="list-group-item">
-        <time class="text-muted"><small>April 30, 2010</small></time>
-    </li>
-</ul>
-{% endcapture %}
-{% include templates/contentsection.html heading="Version 2.0" %}
+    <section class="aur-content-group-hr">
+        <h3 class="aur-content-subheading">Version 3.0</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-check" text="Improved modern interface" %}
+            {% include templates/history-item.html icon="fa-check" text="Improved native support for Windows 8" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>October 9, 2012</time>" %}
+        </ul>
+    </section>
 
-{% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        First public release
-    </li>
-    <li class="list-group-item">
-        <time class="text-muted"><small>December 03, 2009</small></time>
-    </li>
-</ul>
+    <section class="aur-content-group-hr">
+        <h3 class="aur-content-subheading">Version 2.1</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-plus-square" text="Added multi-monitor support to check any or all connected monitors/displays for dead pixels" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>October 12, 2010</time>" %}
+        </ul>
+    </section>
+
+    <section class="aur-content-group-hr">
+        <h3 class="aur-content-subheading">Version 2.0</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-plus-square" text="Added a new edition of the program in the form of a HTML Application (HTA)" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>April 30, 2010</time>" %}
+        </ul>
+    </section>
+
+    <section class="aur-content-group">
+        <h3 class="aur-content-subheading">Version 1.0</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-plus-square" text="First public release" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>December 03, 2009</time>" %}
+        </ul>
+    </section>
+
 {% endcapture %}
-{% include templates/contentsection.html heading="Version 1.0" %}
+{% include templates/nosidebar-content.html %}

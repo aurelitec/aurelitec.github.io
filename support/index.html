@@ -6,19 +6,27 @@ title       : Support and Contact
 description : We are always happy to hear from you. Please send your feedback, comments, suggestions or problems. Use the contact form, or send us a direct email.
 ---
 
-{% capture thecontent %}
-    <p>We are always happy to hear from you.</p>
-    <p>Please send your feedback, comments, suggestions or problems:</p>
-    <script type="text/javascript" src="https://form.jotformeu.com/jsform/50793528828367"></script>
-{% endcapture %}
-{% include templates/contentsection.html heading="Contact Form" %}
-
-{% capture thecontent %}
-    <p>Dislike forms? You can also send us a direct email.</p>
-    <p>Email us with as much detail as you can so we can give you the best help possible.</p>
-
-    <a target="_blank" class="btn btn-primary" href="http://www.google.com/recaptcha/mailhide/d?k=01PO-pEhpelNojf9aqrwjL9g==&c=U0CwpA-8dYjPTVPGphEFuW5ME7nOHvva85cerEMiGOk=" role="button">Send Email</a>
-{% endcapture %}
-{% include templates/contentsection.html heading="Email" %}
-
-{% include various/article-list.html %}
+<div class="row">
+    <div class="col-lg-8">
+        <section class="aur-content-group">
+            <h2 class="aur-content-heading">Contact Form</h2>
+            <p>We are always happy to hear from you.</p>
+            <p>Please send your feedback, comments, suggestions or problems:</p>
+            <script type="text/javascript" src="https://form.jotformeu.com/jsform/50793528828367"></script>
+        </section>
+        <section class="aur-content-group">
+            <h2 class="aur-content-heading">Articles</h2>
+            {% include various/article-list.html %}
+        </section>
+    </div>
+    <div class="col-lg-4">
+        <section class="aur-content-group">
+            <h2 class="aur-content-heading">Dislike forms?</h2>
+            <p>You can also send us a direct email.</p>
+            <p>Email us with as much detail as you can so we can give you the best help possible.</p>
+            <p>
+                <a target="_blank" class="btn btn-primary" href="http://www.google.com/recaptcha/mailhide/d?k=01PO-pEhpelNojf9aqrwjL9g==&c=U0CwpA-8dYjPTVPGphEFuW5ME7nOHvva85cerEMiGOk=" role="button">Send Email</a>
+            </p>
+        </section>
+    </div>
+</div>

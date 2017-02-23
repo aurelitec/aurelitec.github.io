@@ -1,15 +1,19 @@
 {% include common/header.html %}
 
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid aur-info-jumbotron">
     <div class="container">
-        <p class="jumbotron-heading"><a class="appname" href="{{ site.github.url }}/articles/">Articles</a></p>
+        <h1 class="aur-jumbotron-heading"><a href="{{ site.github.url }}/articles/">Articles</a></h1>
     </div>
 </div>
 
 <!-- Main Content -->
-<article class="container site-main article">
-    <h1 class="page-heading">{{page.title}}</h1>
-    {{ content }}
-</article>
+<main class="aur-site-main">
+    <div class="container">
+        <h1 class="page-heading">{{page.title}}</h1>
+        <div class="aur-content-group">
+            {{ content }}
+        </div>
+    </div>
+</main>
 
 {% include common/footer.html %}

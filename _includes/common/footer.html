@@ -1,37 +1,57 @@
 
     <!-- Site Footer -->
-    <footer class="site-footer">
+    <footer class="aur-site-footer">
         <div class="container">
-            <nav class="nav nav-inline">
-                <a class="nav-link" href="{{ site.github.url }}/cinemadrape/windows/">CinemaDrape</a>
-                <a class="nav-link" href="{{ site.github.url }}/colorveil/windows/">ColorVeil</a>
-                <a class="nav-link" href="{{ site.github.url }}/injuredpixels/windows/">InjuredPixels</a>
-                <a class="nav-link" href="{{ site.github.url }}/pixelhealer/windows/">PixelHealer</a>
-                <a class="nav-link" href="{{ site.github.url }}/colortypist/windows/">Colortypist</a>
-                <a class="nav-link" href="{{ site.github.url }}/whatsmyco/web/">WhatsMyCo</a>
-                <a class="nav-link" href="{{ site.github.url }}/thumbico/windows/">Thumbico</a>
-                <a class="nav-link" href="{{ site.github.url }}/htmtied/windows/">HTMtied</a>
-            </nav>
 
-            <nav class="nav nav-inline">
-                <a class="nav-link" href="{{ site.github.url }}/apps/">Apps</a>
-                <a class="nav-link" href="{{ site.github.url }}/reviews/">Reviews</a>
-                <a class="nav-link" href="{{ site.github.url }}/support/">Support</a>
-                <a class="nav-link" href="{{ site.github.url }}/about/">About</a>
-            </nav>
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <h3 class="aur-footer-heading">Apps</h3>
+                    <nav class="nav flex-wrap">
+                        <a class="nav-link" href="{{ site.github.url }}/cinemadrape/windows/">CinemaDrape</a>
+                        <a class="nav-link" href="{{ site.github.url }}/colorveil/windows/">ColorVeil</a>
+                        <a class="nav-link" href="{{ site.github.url }}/injuredpixels/windows/">InjuredPixels</a>
+                        <a class="nav-link" href="{{ site.github.url }}/pixelhealer/windows/">PixelHealer</a>
+                        <a class="nav-link" href="{{ site.github.url }}/colortypist/windows/">Colortypist</a>
+                        <a class="nav-link" href="{{ site.github.url }}/whatsmyco/web/">WhatsMyCo</a>
+                        <a class="nav-link" href="{{ site.github.url }}/thumbico/windows/">Thumbico</a>
+                        <a class="nav-link" href="{{ site.github.url }}/htmtied/windows/">HTMtied</a>
+                    </nav>
+                </div>
 
-            <p class="copyright">Copyright © 1999-2017 Aurelitec. All rights reserved. <a href="{{ site.github.url }}/about/privacy/">Privacy Policy</a></p>
+                <div class="col-md-3 mb-5">
+                    <h3 class="aur-footer-heading">Pages</h3>
+                    <nav class="nav flex-wrap">
+                        <a class="nav-link" href="{{ site.github.url }}">Home</a>
+                        <a class="nav-link" href="{{ site.github.url }}/apps/">Apps</a>
+                        <a class="nav-link" href="{{ site.github.url }}/reviews/">Reviews</a>
+                        <a class="nav-link" href="{{ site.github.url }}/support/">Support</a>
+                        <a class="nav-link" href="{{ site.github.url }}/about/">About</a>
+                    </nav>
+                </div>
 
-            <nav class="nav nav-inline">
-                <a class="nav-link social social-tumblr" href="/about/social/tumblr/" target="_blank"><img class="social-icon" src="{{ site.github.url }}/img/third/social/tumblr.svg" alt="Tumblr" title="Tumblr" /></a>
-                <!-- <a class="nav-link social social-wordpress" href="https://aurelitec.wordpress.com/" target="_blank"><img class="social-icon" src="{{ site.github.url }}/img/third/social/wordpress.svg" alt="WordPress" title="WordPress" /></a> -->
-                <a class="nav-link social social-twitter" href="https://twitter.com/aurelitec" target="_blank"><img class="social-icon" src="{{ site.github.url }}/img/third/social/twitter.svg" alt="Twitter" title="Twitter" /></a>
-            </nav>
+                <div class="col-md-3 mb-5">
+                    <h3 class="aur-footer-heading">Social</h3>
+                    <nav class="nav">
+                        <a class="nav-link" href="{{ site.github.url }}/about/social/tumblr/">
+                            <i class="fa fa-tumblr aur-icon-social" aria-hidden="true"></i>
+                        </a>
+                        <a class="nav-link" href="https://github.com/aurelitec" target="_blank">
+                            <i class="fa fa-github aur-icon-social" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <p class="text-center">Copyright © 1999-2017 Aurelitec. All rights reserved.
+                <a class="d-sm-block d-lg-inline" href="{{ site.github.url }}/about/privacy/">Privacy Policy</a>
+            </p>
+
         </div>
     </footer> <!-- .site-footer -->
 
-    <!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 </html>

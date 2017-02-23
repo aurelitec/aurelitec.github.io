@@ -9,77 +9,54 @@ description : View CinemaDrape's full version history and see a comprehensive li
 ---
 
 {% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">Improved native support for Windows 10/8.1/8</li>
-    <li class="list-group-item"><time class="text-muted"><small>March 9, 2015</small></time></li>
-</ul>
-{% endcapture %}
-{% include templates/contentsection.html heading="Version 2.1" %}
 
-{% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Transparent focus areas can now be added using the mouse, like drawing rectangles
-    </li>
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added the ability to create as many focus areas as you need
-    </li>
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added the ability to save the focus areas for future reuse in any number of layout files
-    </li>
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added a customizable keyword shortcut to pause and resume the drape
-    </li>
-    <li class="list-group-item"><time class="text-muted"><small>November 28, 2012</small></time></li>
-</ul>
-{% endcapture %}
-{% include templates/contentsection.html heading="Version 2.0" %}
+    <h2 class="aur-page-heading">CinemaDrape Version History</h2>
 
-{% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added new menu items to simplify changing the shortcut keys that start CinemaDrape
-    </li>
-    <li class="list-group-item"><time class="text-muted"><small>August 06, 2010</small></time></li>
-</ul>
-{% endcapture %}
-{% include templates/contentsection.html heading="Version 1.2" %}
+    <section class="aur-content-group-hr">
+        <h3 class="aur-content-subheading">Version 2.1</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-check" text="Improved native support for Windows 10/8.1/8" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>March 9, 2015</time>" %}
+        </ul>
+    </section>
 
-{% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added an option to temporarily pause and reveal the entire screen
-    </li>
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added menu options for standard focus area sizes
-    </li>
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added the ability to restore the previously selected focus area
-    </li>
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        Added a menu option to set a random drape color
-    </li>
-    <li class="list-group-item"><time class="text-muted"><small>May 28, 2010</small></time></li>
-</ul>
-{% endcapture %}
-{% include templates/contentsection.html heading="Version 1.1" %}
+    <section class="aur-content-group-hr">
+        <h3 class="aur-content-subheading">Version 2.0</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-plus-square" text="Transparent focus areas can now be added using the mouse, like drawing rectangles" %}
+            {% include templates/history-item.html icon="fa-plus-square" text="Added the ability to create as many focus areas as you need" %}
+            {% include templates/history-item.html icon="fa-plus-square" text="Added the ability to save the focus areas for future reuse in any number of layout files" %}
+            {% include templates/history-item.html icon="fa-plus-square" text="Added a customizable keyword shortcut to pause and resume the drape" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>November 28, 2012</time>" %}
+        </ul>
+    </section>
 
-{% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        First public release.
-    </li>
-    <li class="list-group-item"><time class="text-muted"><small>February 01, 2010</small></time></li>
-</ul>
+    <section class="aur-content-group-hr">
+        <h3 class="aur-content-subheading">Version 1.2</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-check" text="Added new menu items to simplify changing the shortcut keys that start CinemaDrape" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>August 06, 2010</time>" %}
+        </ul>
+    </section>
+
+    <section class="aur-content-group-hr">
+        <h3 class="aur-content-subheading">Version 1.1</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-plus-square" text="Added an option to temporarily pause and reveal the entire screen" %}
+            {% include templates/history-item.html icon="fa-plus-square" text="Added menu options for standard focus area sizes" %}
+            {% include templates/history-item.html icon="fa-plus-square" text="Added the ability to restore the previously selected focus area" %}
+            {% include templates/history-item.html icon="fa-plus-square" text="Added a menu option to set a random drape color" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>May 28, 2010</time>" %}
+        </ul>
+    </section>
+
+    <section class="aur-content-group">
+        <h3 class="aur-content-subheading">Version 1.0</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-plus-square" text="First public release" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>February 01, 2010</time>" %}
+        </ul>
+    </section>
+
 {% endcapture %}
-{% include templates/contentsection.html heading="Version 1.0" %}
+{% include templates/nosidebar-content.html %}

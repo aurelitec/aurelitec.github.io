@@ -9,32 +9,24 @@ description : Use InjuredPixels for Android to check the screen of your smartpho
 image       : /img/apps/injuredpixels/android/jumbotron/injuredpixels-android-jumbotron-shot-3x.png
 ---
 
-{% capture thecontent %}
+<section class="aur-content-group text-center">
     <div class="row">
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">Test Before Buying</h3>
-            <p>Check the screen of any Android smartphone or tablet for dead pixels or scratches, even in the store, before buying.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">Test After Buying</h3>
-            <p>Or test the screen during the warranty period, as you may get a replacement according to its dead pixel policy.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">Injured &amp; Dead Pixels</h3>
-            <p>Easily check for hot, dead or stuck pixels, for pixels that do not illuminate properly or do not display the correct color output.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">Straightforward</h3>
-            <p>InjuredPixels fills the entire screen with a single color, so you can check for pixels that do not match the selected color.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">Easy To Use</h3>
-            <p>Tap the color buttons or the volume keys to cycle through colors. Double tap to go full screen and check for defects.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">No Ads, No Internet</h3>
-            <p>InjuredPixels is completely free, doesn't show ads, and requires no Internet and no extra permissions whatsoever.</p>
-        </div>
+        {% include templates/feature.html icon="fa-shopping-cart" heading="Test Before Buying" text="Check the screen of any Android smartphone or tablet for
+        dead pixels or scratches, even in the store, before buying." %}
+
+        {% include templates/feature.html icon="fa-truck" heading="Test After Buying" text="Or test the screen during the warranty period, as you may get a
+        replacement according to its dead pixel policy." %}
+
+        {% include templates/feature.html icon="fa-medkit" heading="Injured Pixels" text="Easily check for hot, dead or stuck pixels, for pixels that do
+        not illuminate properly or do not display the correct color output." %}
+
+        {% include templates/feature.html icon="fa-tint" heading="Color Testing" text="InjuredPixels fills the entire screen with a single color, so you
+        can check for pixels that do not match the selected color." %}
+
+        {% include templates/feature.html icon="fa-hand-pointer-o" heading="Easy Controls" text="Tap the color buttons or the volume keys to cycle through colors.
+        Double tap to go full screen and check for defects." %}
+
+        {% include templates/feature.html icon="fa-toggle-off" heading="No Ads, No Internet" text="InjuredPixels is completely free, doesn't show ads, and
+        requires no Internet and no extra permissions whatsoever." %}
     </div>
-{% endcapture %}
-{% include templates/contentsection.html heading="Features" %}
+</section>

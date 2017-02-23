@@ -1,12 +1,24 @@
 <!-- Secondary Menu -->
-<section class="stripe-secondary-menu">
+<section class="aur-secondary-menu-stripe">
     <div class="container">
-        <nav class="nav nav-inline secondary-menu">
-            <a class="nav-link{% if page.active == 'overview' %} active{% endif %}" href="{{ site.github.url }}{{page.appurl}}">Overview</a>
-            <a class="nav-link{% if page.active == 'help' %} active{% endif %}" href="{{ site.github.url }}{{page.appurl}}help/">Help</a>
-            <a class="nav-link{% if page.active == 'reviews' %} active{% endif %}" href="{{ site.github.url }}{{page.appurl}}reviews/">Reviews</a>
-            <a class="nav-link{% if page.active == 'history' %} active{% endif %}" href="{{ site.github.url }}{{page.appurl}}history/">History</a>
-            <a class="nav-link{% if page.active == 'download' %} active{% endif %}" href="{{ site.github.url }}{{page.appurl}}download/">Download</a>
+        <nav class="aur-secondary-menu" >
+            <div class="row no-gutters">
+                <div class="col-6 col-sm">
+                    <a class="nav-link{% if page.active == 'overview' %} active{% endif %}" href="{{ site.github.url }}{{page.appurl}}">Overview</a>
+                </div>
+                <div class="col-6 col-sm">
+                    <a class="nav-link{% if page.active == 'help' %} active{% endif %}" href="{{ site.github.url }}{{page.appurl}}help/">Help</a>
+                </div>
+                <div class="col-6 col-sm">
+                    <a class="nav-link{% if page.active == 'reviews' %} active{% endif %}" href="{{ site.github.url }}{{page.appurl}}reviews/">Reviews</a>
+                </div>
+                <div class="col-6 col-sm">
+                    <a class="nav-link{% if page.active == 'history' %} active{% endif %}" href="{{ site.github.url }}{{page.appurl}}history/">History</a>
+                </div>
+                <div class="col-sm">
+                    <a class="nav-link{% if page.active == 'download' %} active{% endif %}" href="{{ site.github.url }}{{page.appurl}}download/">Download</a>
+                </div>
+            </div>
         </nav>
     </div>
 </section>

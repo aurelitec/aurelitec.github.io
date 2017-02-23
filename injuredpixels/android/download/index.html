@@ -1,7 +1,7 @@
 ---
 active      : download
 app         : injuredpixels-android
-appname     : InjuredPixels
+appname     : InjuredPixels for Android
 appurl      : /injuredpixels/android/
 layout      : download-page
 
@@ -9,28 +9,40 @@ title       : InjuredPixels for Android - Free Install
 description : Install and run InjuredPixels on any smartphone or tablet with Android version 4.4 and above.
 ---
 
-{% capture thecontent %}
-<h3 class="item-heading">Install InjuredPixels</h3>
-<p>
-    <strong>Version 1.0. Only 37KB.</strong> InjuredPixels runs on all Android versions starting with version 4.4. It requires no Internet and no extra
-    permissions whatsoever.
-</p>
-<p>
-    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.aurelitec.injuredpixels" role="button" target="_blank">Get it on Google Play</a>
-</p>
-{% endcapture %}
-{% include templates/contentsection.html heading="Install" %}
-
-{% capture thecontent %}
-    <p>
-        InjuredPixels for Android is free and open source, and licensed under the <a href="{{ site.github.url }}/injuredpixels/android/license/">Apache License
-        Version 2.0</a>. The source code is available <a href="https://github.com/aurelitec/injuredpixels-android" target="_blank">on GitHub</a>. We look
-        forward to your contributions!
-    </p>
-    <p>
-        <a href="https://github.com/aurelitec/injuredpixels-android" target="_blank">
-            <img class="inline-logo" src="/img/third/social/github/github-logo.png" alt="GitHub" />
-        </a>
-    </p>
-{% endcapture %}
-{% include templates/contentsection.html heading="License" %}
+<div class="row">
+    <div class="col-lg-8">
+        <div class="aur-content-group">
+            <h2 class="aur-content-heading">Install InjuredPixels</h2>
+            <p>
+                <strong>Version 1.0. Only 37KB.</strong> InjuredPixels runs on all Android versions starting with version 4.4. It requires no Internet and no
+                extra permissions whatsoever.
+            </p>
+            <p>
+                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.aurelitec.injuredpixels" target="_blank" role="button">Get it
+                on Google Play</a>
+            </p>
+        </div>
+        <div class="aur-content-group">
+            <h2 class="aur-content-heading">License Agreement</h2>
+            <p>
+                InjuredPixels for Android is free and open source, and licensed under the <a href="{{ site.github.url }}/injuredpixels/android/license/">Apache
+                License Version 2.0</a>. The source code is available <a href="https://github.com/aurelitec/injuredpixels-android" target="_blank">on
+                GitHub</a>. We look forward to your contributions!
+            </p>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <ul class="list-unstyled aur-vert-logo-list">
+            <li>
+                <a href="http://opensource.org/" target="_blank">
+                    <img class="img-fluid" width="120" src="/img/third/social/osi/osi-standard-logo.png" alt="OSI" />
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/aurelitec/injuredpixels-android" target="_blank">
+                    <i class="fa fa-github aur-fa-logo" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

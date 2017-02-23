@@ -9,12 +9,16 @@ description : View full version history for InjuredPixels for Android, and see a
 ---
 
 {% capture thecontent %}
-<ul class="list-group">
-    <li class="list-group-item">
-        <span class="tag tag-default tag-pill float-xs-right">New</span>
-        First public release
-    </li>
-    <li class="list-group-item"><time class="text-muted"><small>February 19, 2016</small></time></li>
-</ul>
+
+    <h2 class="aur-page-heading">InjuredPixels For Android Version History</h2>
+
+    <section class="aur-content-group">
+        <h3 class="aur-content-subheading">Version 1.0</h3>
+        <ul class="fa-ul aur-history-list">
+            {% include templates/history-item.html icon="fa-plus-square" text="First public release" %}
+            {% include templates/history-item.html icon="fa-clock-o" text="<time>February 19, 2016</time>" %}
+        </ul>
+    </section>
+
 {% endcapture %}
-{% include templates/contentsection.html heading="Version 1.0" %}
+{% include templates/nosidebar-content.html %}

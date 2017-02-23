@@ -10,54 +10,41 @@ description   : Add a color filter over your screen, over any website you visit,
 image         : /img/apps/colorveil/colorveil-jumbotron-shot.png
 ---
 
-{% capture thecontent %}
+<section class="aur-content-group text-center">
     <div class="row">
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">Color Filter</h3>
-            <p>ColorVeil adds a customizable color filter over your Desktop, Internet browser, video player, document, email, or program. You can work, play, read, write, or browse as usual. </p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">Dyslexia / SSS</h3>
-            <p>ColorVeil can help people with Dyslexia and Scotopic Sensitivity Syndrome. It applies a coloured tint across the screen, that can match the prescription from the optometrist.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="item-heading">Extra Dimmer</h3>
-            <p>ColorVeil can reduce screen brightness, even below its lowest available setting. This helps you reduce eye strain, especially at night, and may help save battery on notebooks and tablets.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h4 class="item-heading">Customizable</h4>
-            <p>ColorVeil lets you easily customize the filter color and opacity. For example, choose Orange to block out the blue light responsible for sleep deprivation.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h4 class="item-heading">Easy On/Off</h4>
-            <p>ColorVeil makes it very easy to instantly turn the color filter on and off: simply click its icon in the notification area. Or press a (customizable) keyboard shortcut.</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h4 class="item-heading">Portable &amp; Installable</h4>
-            <p>You can run ColorVeil on any PC without installation: just download and unpack the ZIP archive. And you can also install and deploy it across your network using the MSI setup.</p>
-        </div>
-    </div>
-{% endcapture %}
-{% include templates/contentsection.html heading="Features" %}
+        {% include templates/feature.html icon="fa-tint" heading="Color Filter" text="ColorVeil adds a customizable color filter over your Desktop,
+        Internet browser, video player, document, email, or program. You can work, play, read, write, or browse as usual." %}
 
-{% capture thecontent %}
-    <div class="row">
-        <div class="col-lg-4 content-item">
-            <h3 class="quote-heading"><a class="heading-link" href="http://colorveil.software.informer.com/" target="_blank">Software Informer</a></h3>
-            <!-- <p>"Dyslexia, SSS, or just plain eye strain? ColorVeil is probably the most flexible, convenient, and efficient solution."</p> -->
-            <p>"The most convenient solution for dyslexia or SSS when it comes to adjusting the amount of light coming from your display."</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="quote-heading"><a class="heading-link" href="http://betanews.com/2015/08/21/give-your-screen-a-custom-tint-with-colorveil/" target="_blank">BetaNews</a></h3>
-            <p>"Place a color filter over your screen, reducing brightness and cutting eye strain. ... A tiny download - 21.8KB, really?"</p>
-        </div>
-        <div class="col-lg-4 content-item">
-            <h3 class="quote-heading"><a class="heading-link" href="http://www.ilovefreesoftware.com/29/windows/add-color-filter-browser-video-player-desktop.html" target="_blank">I Love Free Software</a></h3>
-            <p>"This tool probably offers one of the best ways to minimize eye strain and irritation while using your PC."</p>
-        </div>
+        {% include templates/feature.html icon="fa-low-vision" heading="Dyslexia / SSS" text="ColorVeil can help people with Dyslexia and Scotopic Sensitivity
+        Syndrome. It applies a coloured tint across the screen, that can match the prescription from the optometrist." %}
+
+        {% include templates/feature.html icon="fa-eye" heading="Eye Strain" text="ColorVeil can reduce screen brightness, even below its lowest
+        available setting. This helps reduce eye strain, especially at night, and can save battery on notebooks and tablets." %}
+
+        {% include templates/feature.html icon="fa-gear" heading="Customizable" text="ColorVeil lets you easily customize the color and opacity of the filter.
+        For example, choose an Orange color filter to block out the blue light responsible for sleep deprivation." %}
+
+        {% include templates/feature.html icon="fa-toggle-on" heading="Easy On/Off" text="ColorVeil makes it very easy to instantly turn the color filter on and
+        off: simply click the ColorVeil icon in the notification area. Or press a (customizable) keyboard shortcut." %}
+
+        {% include templates/feature.html icon="fa-download" heading="Portable &amp; Installable" text="Run ColorVeil on any PC without installation:
+        just download and unpack the ZIP archive. You can also install and deploy it across your network using the MSI setup program." %}
     </div>
-{% endcapture %}
-{% include templates/contentsection.html heading="Reviews" %}
+</section>
+
+<section class="aur-content-group text-center">
+    <h2 class="aur-home-heading">Selected Reviews</h2>
+    <div class="row">
+        {% include templates/selected-review.html link="http://colorveil.software.informer.com/" source="Software Informer"
+        quote="The most convenient solution for dyslexia or SSS when it comes to adjusting the amount of light coming from your display." %}
+
+        {% include templates/selected-review.html link="http://betanews.com/2015/08/21/give-your-screen-a-custom-tint-with-colorveil/" source="BetaNews"
+        quote="Place a color filter over your screen, reducing brightness and cutting eye strain. ... A tiny download - 21.8KB, really?" %}
+
+        {% include templates/selected-review.html link="http://www.ilovefreesoftware.com/29/windows/add-color-filter-browser-video-player-desktop.html"
+        source="I Love Free Software" quote="This tool probably offers one of the best ways to minimize eye strain and irritation while using your PC." %}
+    </div>
+</section>
 
 {% capture thecontent %}
     <blockquote class="blockquote">

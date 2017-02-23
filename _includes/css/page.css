@@ -2,11 +2,29 @@
    Home Page
    ========================================================================== */
 
-.carousel .jumbotron-content {
-    min-height: 22rem;
+.aur-homepage-carousel {
+    background: #1badea;
 }
 
-@media (min-width: 544px) {
+.aur-homepage-carousel .aur-extra {
+    display: none;
+}
+
+.aur-homepage-carousel .aur-jumbotron-heading {
+    min-height: 10rem;
+}
+
+@media (min-width: 576px) {
+    .aur-homepage-carousel .aur-jumbotron-heading {
+        min-height: 0;
+    }
+}
+
+/*.aur-homepage-carousel .aur-app-jumbotron {
+    min-height: 50rem;
+}*/
+
+/*@media (min-width: 544px) {
     .carousel .jumbotron-content {
         min-height: 20rem;
     }
@@ -16,7 +34,7 @@
     .carousel .jumbotron-content {
         min-height: 0;
     }
-}
+}*/
 
 .home-featured-stripe {
     border-top: 2px solid #fff;
@@ -27,23 +45,27 @@
    Apps Page
    ========================================================================== */
 
-.apps-listing .jumbotron {
+.aur-apps-listing .jumbotron {
     background: #fff;
     color: #373737;
 }
 
-.apps-listing .appname {
+.aur-apps-listing .aur-appname {
     color: #373737;
+}
+
+.aur-apps-listing .aur-extra {
+    display: none;
 }
 
 /* Jumbotron content link */
 
-.apps-listing .jumbotron a.link {
+.aur-apps-listing .jumbotron a.link {
     color: #373737;
     border-bottom: 1px dotted #373737;
 }
 
-.apps-listing .jumbotron a.link:focus, .apps-listing .jumbotron a.link:hover {
+.aur-apps-listing .jumbotron a.link:focus, .aur-apps-listing .jumbotron a.link:hover {
     border-bottom: 1px solid #373737;
 }
 

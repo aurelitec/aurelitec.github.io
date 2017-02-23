@@ -9,7 +9,8 @@
     <!-- Bootstrap CSS -->
     <link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Dosis:200" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/236e00eb8f.css">
     <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">
     <meta name="theme-color" content="#1BADEA">
 
@@ -23,22 +24,23 @@
 
     <!-- Site Header -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
             <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <a class="navbar-brand" href="{{ site.github.url }}/">
-                    <img class="header-logo" alt="Aurelitec" src="{{ site.github.url }}/img/theme/branding/aurelitec-logo-header.png" />
+                    <img alt="Aurelitec" src="{{ site.github.url }}/img/theme/branding/aurelitec-logo-header.png" />
                 </a>
 
-                <button class="navbar-toggler hidden-md-up float-xs-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">&#9776;</button>
-                <div class="clearfix hidden-md-up"></div>
-
-                <div class="navbar-panel collapse navbar-toggleable-sm" id="collapsingNavbar">
-                    <nav class="nav">
-                        <a class="nav-link" href="{{ site.github.url }}/apps/">Apps</a>
-                        <a class="nav-link" href="{{ site.github.url }}/reviews/">Reviews</a>
-                        <a class="nav-link" href="{{ site.github.url }}/support/">Support</a>
-                        <a class="nav-link" href="{{ site.github.url }}/about/">About</a>
-                    </nav>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="navbar-nav">
+                      <a class="nav-item nav-link" href="{{ site.github.url }}/apps/">Apps</a>
+                      <a class="nav-item nav-link" href="{{ site.github.url }}/reviews/">Reviews</a>
+                      <a class="nav-item nav-link" href="{{ site.github.url }}/support/">Support</a>
+                      <a class="nav-item nav-link" href="{{ site.github.url }}/about/">About</a>
+                    </div>
                 </div>
             </div>
         </nav>

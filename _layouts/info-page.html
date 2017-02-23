@@ -1,14 +1,16 @@
 {% include common/header.html %}
 
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid aur-info-jumbotron">
     <div class="container">
-        <h1 class="jumbotron-heading"><strong class="appname">{{page.heading}}</strong></h1>
+        <h1 class="aur-jumbotron-heading">{{page.heading}}</h1>
     </div>
 </div>
 
 <!-- Main Content -->
-<main class="container site-main">
-    {{ content }}
+<main class="aur-site-main">
+    <div class="container">
+        {{ content }}
+    </div>
 </main>
 
 {% include common/footer.html %}
