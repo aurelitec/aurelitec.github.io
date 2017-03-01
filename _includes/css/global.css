@@ -123,14 +123,7 @@ a:focus, a:hover {
 
 .aur-app-jumbotron {
     margin-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 2rem;
-}
-
-@media (min-width: 992px) {
-    .aur-app-jumbotron {
-        padding-top: 4rem;
-    }
+    padding: 2rem 0;
 }
 
 /* Info Jumbotron */
@@ -148,9 +141,13 @@ a:focus, a:hover {
 
 /* Jumbotron content */
 
+.aur-jumbotron-text-container {
+    align-self: center;
+}
+
 @media (max-width: 991px) {
     .aur-jumbotron-text-container {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.25rem;
     }
 }
 
@@ -164,7 +161,6 @@ a:focus, a:hover {
     font-family: 'Dosis', sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
-    /*line-height: 1;*/
     margin: 0;
 }
 
@@ -214,23 +210,28 @@ p.aur-jumbotron-heading {
 
 /* Jumbotron screenshot */
 
-.aur-jumbotron-shot-container {
-    max-height: 17.5rem;
-    overflow: hidden;
-}
-
-/*@media (min-width: 992px) {
+@media (min-width: 992px) {
     .aur-jumbotron-shot-container {
-        max-height: 17.5rem;
-        overflow: hidden;
+        text-align: right;
     }
-}*/
+}
 
 .aur-jumbotron-shot {
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-    border-top: 2px solid #fff;
+    border: 2px solid #fff;
 }
+
+@media (min-width: 992px) {
+    .aur-jumbotron-shot {
+        max-width: 23.225rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .aur-jumbotron-shot {
+        max-width: 27.75rem;
+    }
+}
+
 
 
 /* ==========================================================================

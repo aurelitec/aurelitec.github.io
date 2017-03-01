@@ -60,11 +60,17 @@
 
 .aur-secondary-menu-stripe {
     background: #1badea;
-    border-top: 2px solid #fff;
-    padding: 1rem 0;
+    padding-bottom: 1rem;
+    margin-top: -1rem;
 }
 
 @media (min-width: 576px) {
+    .aur-secondary-menu-stripe {
+        border-top: 2px solid #fff;
+        margin-top: 0;
+        padding: 1rem 0;
+    }
+
     .aur-secondary-menu-stripe {
         padding: 0;
     }

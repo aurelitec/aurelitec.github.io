@@ -4,6 +4,7 @@
 
 .aur-homepage-carousel {
     background: #1badea;
+    padding-bottom: 2rem;
 }
 
 .aur-homepage-carousel .aur-extra {
@@ -11,30 +12,24 @@
 }
 
 .aur-homepage-carousel .aur-jumbotron-heading {
-    min-height: 10rem;
+    min-height: 9rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
     .aur-homepage-carousel .aur-jumbotron-heading {
         min-height: 0;
     }
 }
 
-/*.aur-homepage-carousel .aur-app-jumbotron {
-    min-height: 50rem;
-}*/
-
-/*@media (min-width: 544px) {
-    .carousel .jumbotron-content {
-        min-height: 20rem;
-    }
+.aur-homepage-carousel .carousel-indicators {
+    bottom: 1rem;
 }
 
-@media (min-width: 992px) {
-    .carousel .jumbotron-content {
-        min-height: 0;
+@media (max-width: 1400px) {
+    .aur-homepage-carousel .carousel-control-prev, .aur-homepage-carousel .carousel-control-next {
+        display: none!important;
     }
-}*/
+}
 
 .home-featured-stripe {
     border-top: 2px solid #fff;
