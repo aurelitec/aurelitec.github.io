@@ -9,6 +9,12 @@ description : \"Read what others are saying about InjuredPixels for Android.\"
 ---
 
 {% capture thecontent %}
-    <p>Coming soon.</p>
+    <section class="aur-content-group">
+        <h2 class="aur-content-heading">Selected Reviews</h2>
+        {% assign reviews = site.data.reviews.injuredpixels | where: 'platform', 'android' | sort: 'by', 'last' %}
+        {% for review in reviews %}
+            {% include templates/review.html %}
+        {% endfor %}
+    </section>
 {% endcapture %}
-{% include templates/contentsection.html heading="Reviews" %}
+{% include templates/nosidebar-content.html %}

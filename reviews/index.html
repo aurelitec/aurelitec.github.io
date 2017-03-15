@@ -7,6 +7,17 @@ description : Read more reviews like "The verdict&#58; this is simply brilliant.
 ---
 
 {% capture thecontent %}
+
+{% for appreviews in site.data.reviews %}
+{% assign curappreviews = appreviews[1] %}
+
+    {% for review in curappreviews %}
+        {% include templates/review.html showappname="true" %}
+    {% endfor %}
+
+{% endfor %}
+
+
 {% assign reviews = site.reviews | sort: 'by', 'last' %}
 {% for review in reviews %}
     {% include templates/review.html showappname="true" %}

@@ -8,115 +8,18 @@ title       : InjuredPixels for Windows - Reviews And Testimonials
 description : \"As hardware diagnostics applications go, then, InjuredPixels is just about as simple a program as you'll see. But it's also capable, effective and easy to use.\"
 ---
 
+{% capture thecontent %}
+    <section class="aur-content-group">
+        <h2 class="aur-content-heading">Selected Reviews</h2>
+        {% assign reviews = site.data.reviews.injuredpixels | where: 'platform', 'windows' | sort: 'by', 'last' %}
+        {% for review in reviews %}
+            {% include templates/review.html %}
+        {% endfor %}
 
-<div class="row">
-    <div class="col-lg-8">
-        <section class="aur-content-group">
-            <h2 class="aur-content-heading">Selected Reviews</h2>
-            {% assign reviews = site.reviews | where: 'app', 'InjuredPixels' | sort: 'by', 'last' %}
-            {% for review in reviews %}
-                {% include templates/review.html %}
-            {% endfor %}
-        </section>
-    </div>
-    <div class="col-lg-4">
-        <section class="aur-content-group">
-            <h2 class="aur-content-heading">More</h2>
-            <div class="d-flex flex-wrap">
-            <a class="badge aur-featured-badge" href="http://www.baixaki.com.br/download/injuredpixels.htm" target="_blank">
-                Baixaki
-            </a>
-            <a class="badge aur-featured-badge" href="http://betanews.com/2012/12/26/injuredpixels-reveals-monitor-defects/" target="_blank">
-                BetaNews
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.bluranocchio.com/scovare-pixel-bruciati-o-scoloriti-con-injuredpixel" target="_blank">
-                Bluranocchio
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.digitaltrends.com/computing/how-to-fix-a-dead-pixel/" target="_blank">
-                Digital Trends
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.download3k.com/Desktop-Enhancements/Themes-wallpapers/Download-Pitch-Black-Wallpaper.html" target="_blank">
-                Download3K
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.downloadcrew.com/article/29129-injuredpixels_hta_edition" target="_blank">
-                Downloadcrew
-            </a>
-            <a class="badge aur-featured-badge" href="https://web-beta.archive.org/web/20121008045659/http://www.fiberdownload.com:80/Download/22877/InjuredPixels" target="_blank">
-                FiberDownload
-            </a>
-            <a class="badge aur-featured-badge" href="https://web-beta.archive.org/web/20121115045916/http://digital-fotografie-blog.blogspot.ro:80/2010/10/lcd-monitore-auf-tote-pixel-untersuchen.html" target="_blank">
-                Foto-Freeware.de
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.fratellogeek.com/injuredpixels-individuare-i-pixel-morti-dello-schermo/" target="_blank">
-                FratelloGeek
-            </a>
-            <a class="badge aur-featured-badge" href="https://www.freeware.de/download/injuredpixels/" target="_blank">
-                Freeware.de
-            </a>
-            <a class="badge aur-featured-badge" href="https://web-beta.archive.org/web/20121115135729/http://www.fryan0911.com:80/2010/10/check-dead-pixels-on-your-lcd-monitors.html" target="_blank">
-                Fryan's Digital World
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.geekissimo.com/2009/12/22/injuredpixels-trovare-il-pixel-non-funzionanti-del-proprio-monitor/" target="_blank">
-                Geekissimo
-            </a>
-            <a class="badge aur-featured-badge" href="http://download.html.it/software/injuredpixels/" target="_blank">
-                HTML.it
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.ilovefreesoftware.com/03/windows/system-utils/injuredpixels-check-lcd-monitor-for-dead-pixels.html" target="_blank">
-                I Love Free Software
-            </a>
-            <a class="badge aur-featured-badge" href="https://web-beta.archive.org/web/20121027120208/http://www.jasonslater.co.uk:80/2010/02/08/utility-check-your-monitor-for-dead-pixels/" target="_blank">
-                Jason Slater Technology News
-            </a>
-            <a class="badge aur-featured-badge" href="http://lenewbie.com/2016/01/27/detecter-et-reparer-les-pixels-morts-de-votre-moniteur-pixelhealer/" target="_blank">
-                Le Newbie
-            </a>
-            <a class="badge aur-featured-badge" href="https://web-beta.archive.org/web/20121115052929/http://www.pianetatech.it:80/hardware/periferiche-e-desktop/monitor-periferiche/scopri-i-pixel-morti-del-tuo-monitor-lcd-injuredpixels.html" target="_blank">
-                PianetaTech
-            </a>
-            <a class="badge aur-featured-badge" href="http://downloads.pcauthority.com.au/article/29129-injuredpixels_hta_edition" target="_blank">
-                PC &amp; Tech Authority
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.porse.cz/InjuredPixels.html" target="_blank">
-                Porse.cz
-            </a>
-            <a class="badge aur-featured-badge" href="https://www.programecalculator.ro/program-cu-care-poti-detecta-pixelii-morti-si-repara-pe-cei-blocati-injuredpixels/" target="_blank">
-                programecalculator.ro
-            </a>
-            <a class="badge aur-featured-badge" href="https://web-beta.archive.org/web/20121025093713/http://www.sciagnij.pl:80/programy/p/Windows-Diagnostyka_i_podkrecanie-Monitor_LCD-InjuredPixels/14582" target="_blank">
-                Sciagnij.pl
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.scroll.com.tr/olu-piksel-bulma-tespit-etme-programi/" target="_blank">
-                Scroll
-            </a>
-            <a class="badge aur-featured-badge" href="http://web.archive.org/web/20121115125435/http://www.softoxi.com/injuredpixels.html" target="_blank">
-                Softoxi
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.softpedia.com/get/System/System-Miscellaneous/InjuredPixels.shtml" target="_blank">
-                Softpedia
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.softwarecrew.com/2012/12/easily-check-pc-monitors-for-defects-with-injuredpixels/" target="_blank">
-                Softwarecrew
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.rockybytes.com/injuredpixels" target="_blank">
-                Rocky Bytes
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.techhail.org/software/find-dead-stuck-pixel-on-lcd-monitors/9424" target="_blank">
-                TechHail
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.techyard.net/injuredpixels-check-lcd-monitor-for-dead-defective-pixels/" target="_blank">
-                TECH YARD
-            </a>
-            <a class="badge aur-featured-badge" href="http://www.trishtech.com/2012/12/how-to-test-your-lcdled-monitor-for-dead-pixels/" target="_blank">
-                TrishTech.com
-            </a>
-            <a class="badge aur-featured-badge" href="https://web-beta.archive.org/web/20100227143725/http://www.worthytips.com:80/find-dead-pixel-lcd-monitor-injuredpixels/" target="_blank">
-                WorthyTips
-            </a>
-            <a class="badge aur-featured-badge" href="https://ca.finance.yahoo.com/news/dead-pixel-down-tricks-might-191544906.html" target="_blank">
-                Yahoo! Finance
-            </a>
-            </div>
-        </section>
-    </div>
-</div>
+        {% assign reviews = site.reviews | where: 'app', 'InjuredPixels' | sort: 'by', 'last' %}
+        {% for review in reviews %}
+            {% include templates/review.html %}
+        {% endfor %}
+    </section>
+{% endcapture %}
+{% include templates/nosidebar-content.html %}
