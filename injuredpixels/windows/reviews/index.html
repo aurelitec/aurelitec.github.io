@@ -8,9 +8,28 @@ title       : InjuredPixels for Windows - Reviews And Testimonials
 description : \"As hardware diagnostics applications go, then, InjuredPixels is just about as simple a program as you'll see. But it's also capable, effective and easy to use.\"
 ---
 
+<!-- <div class="row">
+    <div class="col-lg-8">
+        <section class="aur-content-group">
+            <h2 class="aur-content-heading">Selected Reviews</h2>
+            {% assign reviews = site.data.reviews.injuredpixels | where: 'platform', 'windows' | sort: 'by', 'last' %}
+            {% for review in reviews %}
+                {% include templates/review.html %}
+            {% endfor %}
+
+            {% assign reviews = site.reviews | where: 'app', 'InjuredPixels' | sort: 'by', 'last' %}
+            {% for review in reviews %}
+                {% include templates/review.html %}
+            {% endfor %}
+        </section>
+    </div>
+    <div class="col-lg-4">
+        <p>attractive, capable, clear, convenient, easy, easy-to-use, effective, efficient, lightweight, minimal, no rival, portable, ready-to-use, simple, simplicity, slick, small, straightforward, useful, user-friendly, </p>
+    </div>
+</div> -->
+
 {% capture thecontent %}
     <section class="aur-content-group">
-        <h2 class="aur-content-heading">Selected Reviews</h2>
         {% assign reviews = site.data.reviews.injuredpixels | where: 'platform', 'windows' | sort: 'by', 'last' %}
         {% for review in reviews %}
             {% include templates/review.html %}
@@ -22,4 +41,4 @@ description : \"As hardware diagnostics applications go, then, InjuredPixels is 
         {% endfor %}
     </section>
 {% endcapture %}
-{% include templates/nosidebar-content.html %}
+{% include templates/contentsection.html heading="Reviews" %}

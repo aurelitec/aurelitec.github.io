@@ -11,3 +11,10 @@
   platform: android
   app: InjuredPixels
   content: "\"Allows for easy pixel abnormality identification. ... Very beneficial during the warranty period to possibly utilize a manufacturer's policy on dead pixels.\""
+
+- by: MajorGeeks
+  link: http://www.majorgeeks.com/files/details/injuredpixels.html
+  date: 2017-03-14
+  platform: windows
+  app: InjuredPixels
+  content: "<q>InjuredPixels is an easy-to-use utility that is expertly geared for checking and identifying those annoying dead, hot or frozen pixels on any LCD monitor. Using it is a breeze.</q>"
