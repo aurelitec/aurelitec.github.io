@@ -1,24 +1,15 @@
----
-title: Aurelitec
-timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  reviews:
-    title: Reviews
-    output: false
-  testimonials:
-    title: Testimonials
-    output: false
-  uploads:
-    title: Uploads
-    output: true
-description: Creating free out of the box programs and apps since 1999
-author: aurelitec
+# Jekyll SEO Tag plugin
+title       : "Aurelitec"
+description : "Creating free out of the box programs and apps since 1999"
+author      : aurelitec
 twitter:
-  username: aurelitec
+  username  : aurelitec
+
+collections:
+  - reviews
+  - testimonials
+
 gems:
-- jekyll-redirect-from
-- jekyll-seo-tag
-- jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
