@@ -9,6 +9,11 @@ description : \"An effective money-saving solution ... and a very user-friendly 
 ---
 
 {% capture thecontent %}
+        {% assign reviews = site.data.reviews.pixelhealer | where: 'platform', 'windows' | sort: 'by', 'last' %}
+        {% for review in reviews %}
+            {% include templates/review.html %}
+        {% endfor %}
+
 {% assign reviews = site.reviews | where: 'app', 'PixelHealer' | sort: 'by', 'last' %}
 {% for review in reviews %}
     {% include templates/review.html %}
