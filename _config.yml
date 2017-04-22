@@ -13,3 +13,5 @@ gems:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
+
+repository: aurelitec/aurelitec.github.io
