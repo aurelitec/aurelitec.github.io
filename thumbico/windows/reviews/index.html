@@ -9,9 +9,9 @@ description : \"The simplicity of the application is its greatest strength, in m
 ---
 
 {% capture thecontent %}
-{% assign reviews = site.reviews | where: 'app', 'Thumbico' | sort: 'by', 'last' %}
-{% for review in reviews %}
-    {% include templates/review.html %}
-{% endfor %}
+    {% assign reviews = site.data.reviews.thumbico | where: 'platform', 'windows' | sort: 'by', 'last' %}
+    {% for review in reviews %}
+        {% include templates/review.html %}
+    {% endfor %}
 {% endcapture %}
 {% include templates/contentsection.html heading="Reviews" %}
