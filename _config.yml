@@ -15,3 +15,6 @@ gems:
   - jekyll-sitemap
 
 repository: aurelitec/aurelitec.github.io
+
+custom:
+  url: http://www.aurelitec.com
