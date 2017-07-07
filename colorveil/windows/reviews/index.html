@@ -9,17 +9,17 @@ description : \"This is an indispensable software used to prevent eye strain. Th
 ---
 
 {% capture thecontent %}
-{% assign reviews = site.reviews | where: 'app', 'ColorVeil' | sort: 'by', 'last' %}
-{% for review in reviews %}
-    {% include templates/review.html %}
-{% endfor %}
+    {% assign reviews = site.data.reviews.colorveil | where: 'platform', 'windows' | sort: 'by', 'last' %}
+    {% for review in reviews %}
+        {% include templates/review.html %}
+    {% endfor %}
 {% endcapture %}
 {% include templates/contentsection.html heading="Reviews" %}
 
 {% capture thecontent %}
-{% assign testimonials = site.testimonials | where: 'app', 'ColorVeil' | sort: 'by', 'last' %}
-{% for testimonial in testimonials %}
-    {% include templates/testimonial.html %}
-{% endfor %}
+    {% assign testimonials = site.testimonials | where: 'app', 'ColorVeil' | sort: 'by', 'last' %}
+    {% for testimonial in testimonials %}
+        {% include templates/testimonial.html %}
+    {% endfor %}
 {% endcapture %}
 {% include templates/contentsection.html heading="Testimonials" %}
