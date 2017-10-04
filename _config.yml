@@ -1,3 +1,5 @@
+url: https://www.aurelitec.com
+
 # Jekyll SEO Tag plugin
 title       : "Aurelitec"
 description : "Creating free out of the box programs and apps since 1999"
@@ -9,7 +11,7 @@ collections:
   - reviews
   - testimonials
 
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
