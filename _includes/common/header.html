@@ -17,10 +17,13 @@
     {% seo %}
 
     {% if jekyll.environment == 'production' %}
-    {% include common/analytics.html %}
+        {% include common/tagmanager/head.html %}
     {% endif %}
 </head>
 <body>
+    {% if jekyll.environment == 'production' %}
+        {% include common/tagmanager/body.html %}
+    {% endif %}
 
     <!-- Site Header -->
     <header>
