@@ -9,10 +9,15 @@ description : \"One of the best apps to keep you concentrated. It can boost your
 ---
 
 {% capture thecontent %}
-{% assign reviews = site.reviews | where: 'app', 'CinemaDrape' | sort: 'by', 'last' %}
-{% for review in reviews %}
-    {% include templates/review.html %}
-{% endfor %}
+    {% assign reviews = site.data.reviews.cinemadrape | where: 'platform', 'windows' | sort: 'by', 'last' %}
+    {% for review in reviews %}
+        {% include templates/review.html %}
+    {% endfor %}
+
+    {% assign reviews = site.reviews | where: 'app', 'CinemaDrape' | sort: 'by', 'last' %}
+    {% for review in reviews %}
+        {% include templates/review.html %}
+    {% endfor %}
 {% endcapture %}
 {% include templates/contentsection.html heading="Reviews" %}
 
