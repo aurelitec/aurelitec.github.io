@@ -27,7 +27,7 @@ a:focus, a:hover {
    Site Header with Navbar
    ========================================================================== */
 
-.navbar.bg-inverse {
+.navbar.bg-dark {
     background-color: #384452!important;
 }
 
