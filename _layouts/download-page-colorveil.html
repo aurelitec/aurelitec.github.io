@@ -1,0 +1,31 @@
+{% include common/header.html %}
+
+<div class="jumbotron jumbotron-fluid aur-app-jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 aur-jumbotron-text-container">
+                <h1 class="aur-jumbotron-heading">
+                    <span class="aur-appname">ColorVeil</span>
+                    is free for use in any environment! Donate to support the development of ColorVeil, or just to say thanks.
+                </h1>
+                <p><a class="btn btn-primary" href="https://gumroad.com/l/colorveil" role="button">Donate Now</a></p>
+            </div>
+            <div class="col-lg-6 aur-jumbotron-shot-container">
+              <img class="img-fluid aur-jumbotron-shot" src="{{ site.url }}/img/apps/colorveil/windows/jumbotron/colorveil-windows-jumbotron-image.png" alt="ColorVeil Screenshot" />
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include templates/app-secondary-menu.html %}
+
+<!-- Main Content -->
+<main class="aur-site-main">
+    <div class="container">
+        {{ content }}
+    </div>
+</main>
+
+{% include stripes/featured/{{page.app}}.html %}
+
+{% include common/footer.html %}
